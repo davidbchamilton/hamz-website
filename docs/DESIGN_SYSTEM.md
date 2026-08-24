@@ -38,11 +38,28 @@ Use generic placeholder blocks where actual photography has not yet been supplie
 
 ## Typography
 
-TODO: Define approved brand typography after visual direction is supplied.
+Interim launch direction:
+
+- use the system sans-serif stack for Hostinger compatibility and zero font-loading cost
+- large, confident display headings
+- compact uppercase eyebrow labels
+- generous body leading for mobile readability
+
+Final brand typography should replace this once supplied.
 
 ## Color Palette
 
-TODO: Define approved brand colors after visual direction is supplied.
+Interim launch palette:
+
+- Ink: `#10100e`
+- Ivory: `#f8f3e8`
+- Brass: `#b88a44`
+- Reef: `#0f766e`
+- Ember: `#b23a2e`
+
+The implemented public site uses a dark editorial base with brass accents,
+subtle reef depth, and restrained warm contrast. Final brand colors should
+replace this once supplied.
 
 ## Motion
 

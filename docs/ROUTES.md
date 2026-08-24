@@ -69,6 +69,13 @@ Eventually contain:
 - WhatsApp
 - email
 
+Current phase:
+
+- form UI is present
+- `?service=<service-slug>` preselects the relevant service
+- form submission remains disabled until an approved email backend, validation,
+  and anti-spam controls are implemented
+
 ## `/placements`
 
 Released records using the producer's production.

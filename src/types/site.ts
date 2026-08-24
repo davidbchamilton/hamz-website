@@ -1,7 +1,10 @@
+import type { ComponentType } from "react";
+
 export type Service = {
   name: string;
   slug: string;
   description: string;
+  icon?: ComponentType<{ className?: string; "aria-hidden"?: boolean }>;
 };
 
 export type Placement = {
@@ -36,4 +39,17 @@ export type BeatPack = {
 export type SocialLink = {
   label: string;
   href: string;
+  isPending?: boolean;
+};
+
+export type NavigationItem = {
+  href: string;
+  label: string;
+};
+
+export type SiteIdentity = {
+  name: string;
+  legalNamePending: boolean;
+  tagline: string;
+  description: string;
 };
