@@ -13,7 +13,7 @@ Must eventually contain:
 - Contact CTA
 - featured beat/player
 - selected placements
-- services preview
+- service inquiry prompts that route to contact
 - concise about section
 - CMA promotional section
 - contact/social footer
@@ -29,19 +29,11 @@ Eventually contain:
 
 BeatStars remains the source of truth.
 
-## `/services`
+## Services
 
-Services:
+There is no standalone `/services` page in the current public route map.
 
-- Custom Beats
-- Exclusive Production
-- Mixing & Mastering
-- Vocal Production
-- Sync Licensing
-
-Each service eventually gets a Request Quote CTA.
-
-Quote links should support:
+Service inquiries are handled through:
 
 `/contact?service=<service-slug>`
 

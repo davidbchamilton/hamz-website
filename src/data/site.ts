@@ -31,7 +31,6 @@ export const siteIdentity: SiteIdentity = {
 export const primaryNavigation: NavigationItem[] = [
   { href: "/", label: "Home" },
   { href: "/beats", label: "Beats" },
-  { href: "/services", label: "Services" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" }
 ];

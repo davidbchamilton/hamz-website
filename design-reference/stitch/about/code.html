@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About - THE ARCHITECT OF SOUND</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Hanken+Grotesk:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#2b2a2a",
+                        "secondary-fixed": "#e2e3de",
+                        "surface-variant": "#353434",
+                        "primary-container": "#c9c6c5",
+                        "tertiary-container": "#cac6c6",
+                        "outline-variant": "#454744",
+                        "tertiary": "#e6e2e2",
+                        "tertiary-fixed": "#e6e1e1",
+                        "on-secondary-fixed-variant": "#454744",
+                        "surface-dim": "#141313",
+                        "outline": "#8f918d",
+                        "on-tertiary": "#313030",
+                        "primary-fixed": "#e5e2e1",
+                        "on-surface": "#e5e2e1",
+                        "surface-tint": "#c9c6c5",
+                        "on-primary-fixed-variant": "#474646",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#1c1b1c",
+                        "on-primary-container": "#535252",
+                        "tertiary-fixed-dim": "#c9c5c5",
+                        "on-secondary-fixed": "#1a1c19",
+                        "inverse-surface": "#e5e2e1",
+                        "background": "#141313",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-bright": "#3a3939",
+                        "on-secondary-container": "#b8b9b4",
+                        "surface-container-highest": "#353434",
+                        "surface-container-low": "#1c1b1b",
+                        "on-primary-fixed": "#1c1b1b",
+                        "secondary": "#c6c7c2",
+                        "on-primary": "#313030",
+                        "primary": "#e5e2e1",
+                        "inverse-on-surface": "#313030",
+                        "surface-container": "#201f1f",
+                        "secondary-fixed-dim": "#c6c7c2",
+                        "inverse-primary": "#5f5e5d",
+                        "on-background": "#e5e2e1",
+                        "error-container": "#93000a",
+                        "primary-fixed-dim": "#c9c6c5",
+                        "tertiary-gold": "#e9c176",
+                        "on-secondary": "#2f312e",
+                        "studio-outline": "#444748",
+                        "secondary-container": "#484a46",
+                        "on-surface-variant": "#c5c7c2",
+                        "on-tertiary-container": "#545252",
+                        "on-tertiary-fixed-variant": "#484646",
+                        "error": "#ffb4ab",
+                        "surface": "#141313",
+                        "on-error": "#690005",
+                        "charcoal-depth": "#121212"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "160px",
+                        "gutter": "32px",
+                        "margin-edge": "64px",
+                        "container-max": "1440px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Hanken Grotesk"],
+                        "display-lg": ["Anton"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "display-xl": ["Anton"],
+                        "mono-ui": ["JetBrains Mono"],
+                        "label-caps": ["JetBrains Mono"],
+                        "headline-lg-mobile": ["Anton"],
+                        "headline-lg": ["Anton"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg": ["80px", { "lineHeight": "80px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-xl": ["120px", { "lineHeight": "110px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+                        "mono-ui": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["40px", { "lineHeight": "44px", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "52px", "letterSpacing": "0.03em", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .noise-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+            z-index: 10;
+        }
+        
+        .industrial-border {
+            border: 1px solid theme('colors.studio-outline');
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md relative antialiased selection:bg-tertiary-gold selection:text-background">
+<div class="noise-overlay fixed"></div>
+<!-- Top Navigation from Shared Components -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-outline-variant/20 flex justify-between items-center px-margin-edge py-6 max-w-container-max mx-auto transition-transform">
+<div class="font-display-lg text-headline-lg tracking-tighter text-on-surface">CARIBBEAN ELITE</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex gap-8">
+<a class="font-mono-ui text-mono-ui uppercase tracking-widest text-on-surface-variant hover:text-muted-gold transition-all duration-300" href="#">BEATS</a>
+<a class="font-mono-ui text-mono-ui uppercase tracking-widest text-on-surface-variant hover:text-muted-gold transition-all duration-300" href="#">SERVICES</a>
+<a class="font-mono-ui text-mono-ui uppercase tracking-widest text-muted-gold font-bold border-b border-muted-gold transition-all duration-300 hover:scale-95" href="#">ABOUT</a>
+<a class="font-mono-ui text-mono-ui uppercase tracking-widest text-on-surface-variant hover:text-muted-gold transition-all duration-300" href="#">CONTACT</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:text-muted-gold transition-all duration-300 hidden md:block">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">music_note</span>
+</button>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-[120px]">
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex flex-col justify-end px-margin-edge py-section-gap max-w-container-max mx-auto w-full">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-surface-container-low industrial-border relative overflow-hidden">
+<img alt="Producer Portrait" class="w-full h-full object-cover object-center opacity-80 mix-blend-luminosity grayscale contrast-125" data-alt="A dramatic, high-contrast professional portrait of a music producer in a dimly lit, high-end studio setting. The lighting is cinematic, highlighting the producer's focused expression amidst analog synthesizers and mixing boards. The aesthetic is industrial brutalism with deep blacks, sharp lines, and subtle hints of gold accent lighting. Shot on medium format film for a gritty yet pristine texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtJdy43XSDK3HzfNSEdt9rpmRrqeGx4G9-bqucYoMoipoP8-Nju5vFylwWnpmEM3WeJ_FIwn4EPD_Nn8sNR7pMqRZ8S3WBHkrvm1vGlujoztPTRkdRxI0ly11Mybj3rmlZp42t4Cpi0Bt4AZVhQQfmSSTOT8-Skqz-sxdAOEHuQDlyc1kWau9foN27hyh8NHRbYpp5lvQDaaeJ8r3GETbWjBC5MXoX3PW92Eop2E7txTFmKYjwrwfRUA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
+</div>
+</div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-gutter items-end">
+<div class="md:col-span-12">
+<div class="font-mono-ui text-label-caps uppercase tracking-[0.2em] text-tertiary-gold mb-4 border-b border-studio-outline inline-block pb-2">01. THE MASTERMIND</div>
+<h1 class="font-display-xl text-headline-lg-mobile md:text-display-xl tracking-tighter uppercase leading-none break-words text-on-surface">THE ARCHITECT<br/>OF SOUND.</h1>
+</div>
+</div>
+</section>
+<!-- Bio Section -->
+<section class="px-margin-edge py-section-gap max-w-container-max mx-auto w-full relative">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+<div class="md:col-span-4 sticky top-[120px]">
+<div class="font-mono-ui text-label-caps text-on-surface-variant bg-surface-container-high industrial-border px-4 py-2 inline-flex items-center gap-2 uppercase">
+<div class="w-2 h-2 bg-tertiary-gold rounded-full animate-pulse"></div>
+                        ORIGIN: CARIBBEAN
+                    </div>
+</div>
+<div class="md:col-span-8">
+<h2 class="font-display-lg text-headline-lg-mobile md:text-display-lg uppercase leading-[0.9] text-primary mb-12">BUILT IN THE CARIBBEAN.<br/><span class="text-surface-variant">ENGINEERED FOR THE WORLD.</span></h2>
+<div class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl space-y-6">
+<p>Forged in the intense rhythms of the islands, elevating Soca, Dancehall, and Afrobeats to stadium-level fidelity. The approach is architectural: building tracks from the low-end up, ensuring maximum impact on any sound system globally.</p>
+<p>Bridging the gap between raw street energy and platinum-tier sonic precision. Every hit, every bassline is calculated for kinetic response.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Studio / Process -->
+<section class="bg-surface-container-lowest border-y border-studio-outline py-section-gap w-full">
+<div class="px-margin-edge max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-6 md:order-2">
+<div class="aspect-square bg-surface-container industrial-border overflow-hidden group">
+<img alt="Mixing Console" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 grayscale contrast-150" data-alt="A close-up, highly detailed shot of a massive analog mixing console in a modern recording studio. Knobs, faders, and glowing LED meters are sharply in focus against a dark, industrial background. The lighting is harsh and directional, emphasizing the tactile, mechanical nature of the equipment. Brutalist aesthetic with a stark black, white, and subtle metallic gold palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDITt9fO6fAIdzWLSaJzl-Ebz_axQcKNWnhq15Iz_KzBaGH0JyIVZgO_AmjaeybVZ7WMBNTUsR9HZDp1yEc2AGEkarRdQfHZ6eMoTkosvq-srZR0E5BxYXFrD2NjWx2vZRxAD7Fw1L3pgZiyPXKk8laWYoFvOhSIO8hSMlI9-NoF3tSOO5_19r7L_Xw7tuKDRrTeKcbyxwl8Cq5jHMJOV68M0Zp-JR7GfRAEYpxToPzYj2nC2lHGQo1tw"/>
+</div>
+</div>
+<div class="md:col-span-6 md:order-1 pr-0 md:pr-12">
+<div class="font-mono-ui text-label-caps uppercase tracking-[0.2em] text-tertiary-gold mb-6">02. METHODOLOGY</div>
+<h3 class="font-display-lg text-headline-lg-mobile md:text-headline-lg uppercase mb-8">ANALOG SOUL.<br/>DIGITAL PRECISION.</h3>
+<div class="space-y-8">
+<div class="border-l-2 border-studio-outline pl-6">
+<div class="font-mono-ui text-mono-ui text-primary mb-2 uppercase">LOW-END ARCHITECTURE</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Sub-bass frequencies tuned specifically for massive sound systems. Not just heard, but felt physically.</p>
+</div>
+<div class="border-l-2 border-studio-outline pl-6">
+<div class="font-mono-ui text-mono-ui text-primary mb-2 uppercase">TRANSIENT SHAPING</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Drums that punch through the densest mixes, retaining the aggressive snap of authentic Dancehall and Afrobeats.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Selected Artists -->
+<section class="px-margin-edge py-section-gap max-w-container-max mx-auto w-full">
+<div class="font-mono-ui text-label-caps uppercase tracking-[0.2em] text-tertiary-gold mb-12 text-center md:text-left">03. COLLABORATORS</div>
+<div class="border-t border-studio-outline">
+<div class="grid grid-cols-12 border-b border-studio-outline py-6 hover:bg-surface-container transition-colors group cursor-pointer">
+<div class="col-span-2 md:col-span-1 font-mono-ui text-mono-ui text-surface-variant group-hover:text-tertiary-gold transition-colors pt-2">01</div>
+<div class="col-span-10 md:col-span-11">
+<h4 class="font-display-lg text-[40px] md:text-[64px] uppercase leading-none">AFROBEATS KINGPIN</h4>
+<div class="font-mono-ui text-label-caps text-on-surface-variant mt-2">PRODUCTION / MIXING</div>
+</div>
+</div>
+<div class="grid grid-cols-12 border-b border-studio-outline py-6 hover:bg-surface-container transition-colors group cursor-pointer">
+<div class="col-span-2 md:col-span-1 font-mono-ui text-mono-ui text-surface-variant group-hover:text-tertiary-gold transition-colors pt-2">02</div>
+<div class="col-span-10 md:col-span-11">
+<h4 class="font-display-lg text-[40px] md:text-[64px] uppercase leading-none">DANCEHALL ELITE</h4>
+<div class="font-mono-ui text-label-caps text-on-surface-variant mt-2">FULL PROJECT ARRANGEMENT</div>
+</div>
+</div>
+<div class="grid grid-cols-12 border-b border-studio-outline py-6 hover:bg-surface-container transition-colors group cursor-pointer">
+<div class="col-span-2 md:col-span-1 font-mono-ui text-mono-ui text-surface-variant group-hover:text-tertiary-gold transition-colors pt-2">03</div>
+<div class="col-span-10 md:col-span-11">
+<h4 class="font-display-lg text-[40px] md:text-[64px] uppercase leading-none">SOCA MONARCH</h4>
+<div class="font-mono-ui text-label-caps text-on-surface-variant mt-2">MASTERING / STEMS</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-section-gap px-margin-edge text-center bg-inverse-surface text-inverse-on-surface">
+<h2 class="font-display-xl text-headline-lg-mobile md:text-display-xl uppercase mb-8">LET'S CREATE.</h2>
+<a class="inline-block bg-background text-on-surface font-display-lg text-[24px] uppercase px-12 py-4 industrial-border hover:bg-tertiary-gold hover:text-background transition-colors duration-300" href="#">
+                INITIATE PROJECT <span class="material-symbols-outlined align-middle ml-2">arrow_forward</span>
+</a>
+</section>
+</main>
+<!-- Footer from Shared Components -->
+<footer class="bg-charcoal-depth w-full bottom-0 border-t border-outline-variant/30">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-edge py-section-gap max-w-container-max mx-auto">
+<div class="md:col-span-4 flex flex-col gap-6">
+<div class="font-display-lg text-display-lg text-muted-gold uppercase leading-none">CARIBBEAN<br/>ELITE</div>
+<p class="font-body-md text-body-md text-on-surface/60">© 2024 CARIBBEAN ELITE PRODUCTION. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="md:col-span-8 flex flex-wrap gap-x-12 gap-y-6 md:justify-end items-start pt-4">
+<a class="font-mono-ui text-mono-ui text-faded-gray uppercase tracking-widest hover:text-on-surface underline decoration-transparent hover:decoration-muted-gold underline-offset-8 transition-all duration-300" href="#">BEATS</a>
+<a class="font-mono-ui text-mono-ui text-faded-gray uppercase tracking-widest hover:text-on-surface underline decoration-transparent hover:decoration-muted-gold underline-offset-8 transition-all duration-300" href="#">SERVICES</a>
+<a class="font-mono-ui text-mono-ui text-primary uppercase tracking-widest hover:text-on-surface underline decoration-transparent hover:decoration-muted-gold underline-offset-8 transition-all duration-300 opacity-80" href="#">ABOUT</a>
+<a class="font-mono-ui text-mono-ui text-faded-gray uppercase tracking-widest hover:text-on-surface underline decoration-transparent hover:decoration-muted-gold underline-offset-8 transition-all duration-300" href="#">CONTACT</a>
+<a class="font-mono-ui text-mono-ui text-faded-gray uppercase tracking-widest hover:text-on-surface underline decoration-transparent hover:decoration-muted-gold underline-offset-8 transition-all duration-300" href="#">PRIVACY</a>
+<a class="font-mono-ui text-mono-ui text-faded-gray uppercase tracking-widest hover:text-on-surface underline decoration-transparent hover:decoration-muted-gold underline-offset-8 transition-all duration-300" href="#">TERMS</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -38,7 +38,7 @@ Visitors should be able to:
 - understand who the producer is
 - hear selected beats
 - reach BeatStars
-- discover production services
+- discover production service inquiry paths
 - view placements and credits
 - view awards/nominations
 - contact the producer
@@ -60,7 +60,6 @@ Expected main navigation:
 
 - Home
 - Beats
-- Services
 - About
 - Contact
 

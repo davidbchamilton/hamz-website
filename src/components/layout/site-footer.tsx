@@ -25,11 +25,6 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link className="transition hover:text-tertiary-gold" href="/services">
-                  Services
-                </Link>
-              </li>
-              <li>
                 <Link className="transition hover:text-tertiary-gold" href="/about">
                   About
                 </Link>
