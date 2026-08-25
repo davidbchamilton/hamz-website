@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { secondaryNavigation, siteIdentity, socialLinks } from "@/data/site";
 
@@ -6,9 +7,14 @@ export function SiteFooter() {
     <footer className="border-t border-studio-outline/60 bg-charcoal-depth">
       <div className="mx-auto grid max-w-[1440px] gap-12 px-6 py-20 md:grid-cols-12 md:px-16 md:py-28">
         <div className="md:col-span-4">
-          <p className="font-display text-[clamp(3rem,7vw,5rem)] uppercase leading-none text-tertiary-gold">
-            CP.
-          </p>
+          <Image
+            src="/images/hamzxl-logo.webp"
+            alt="HAMZXL logo"
+            width={512}
+            height={347}
+            unoptimized
+            className="h-28 w-auto object-contain md:h-36"
+          />
           <p className="mt-10 max-w-sm font-mono text-[11px] uppercase leading-5 tracking-[0.12em] text-muted-studio">
             {siteIdentity.description}
           </p>

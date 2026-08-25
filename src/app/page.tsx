@@ -1,4 +1,5 @@
 import { ArrowDown, ArrowRight, CalendarDays, Mail, Music2, ShoppingCart } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { BeatStarsPanel } from "@/components/media/beatstars-panel";
 import { MediaPlaceholder } from "@/components/media/media-placeholder";
@@ -70,10 +71,15 @@ export default function HomePage() {
             </div>
           </div>
           <div className="order-1 h-[420px] opacity-45 md:absolute md:right-16 md:top-[300px] md:order-2 md:h-[614px] md:w-[44%] md:max-w-[625px] md:opacity-100">
-            <MediaPlaceholder
-              className="h-full aspect-auto grayscale"
-              label="Approved producer hero photography pending."
-              hideLabel
+            <Image
+              src="/images/homepage-main.webp"
+              alt="Portrait of the producer leaning against a chain-link fence."
+              width={1400}
+              height={2098}
+              priority
+              unoptimized
+              sizes="(min-width: 768px) 44vw, calc(100vw - 48px)"
+              className="h-full w-full object-cover object-[50%_32%]"
             />
           </div>
         </div>

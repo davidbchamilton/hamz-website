@@ -6,7 +6,9 @@ Codex must not fabricate missing content. Use clearly marked TODO placeholders u
 
 Producer name: TODO
 
-Professional/stage name: TODO
+Professional/stage name: HAMZXL
+
+Producer logo: `public/images/hamzxl-logo.webp`
 
 Location: TODO
 

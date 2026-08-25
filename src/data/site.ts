@@ -21,11 +21,11 @@ import type {
 } from "@/types/site";
 
 export const siteIdentity: SiteIdentity = {
-  name: "Caribbean Music Producer",
-  legalNamePending: true,
+  name: "HAMZXL",
+  legalNamePending: false,
   tagline: "Dancehall, Soca, and Afrobeats production for serious artists.",
   description:
-    "Official public website for a Caribbean music producer. Final name, biography, credits, links, and media assets are pending approval."
+    "Official public website for HAMZXL, a Caribbean music producer. Final biography, credits, links, and media assets are pending approval."
 };
 
 export const primaryNavigation: NavigationItem[] = [

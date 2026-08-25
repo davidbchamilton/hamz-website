@@ -41,6 +41,11 @@ Do not generate factual photography placeholders pretending to depict the produc
 
 Use generic placeholder blocks where actual photography has not yet been supplied.
 
+Production raster images must be converted to `.webp` before being added to
+the site. Keep dimensions appropriate for the largest rendered use case so
+homepage, catalogue, press, and profile imagery do not ship oversized source
+files or unnecessary bandwidth.
+
 ## Typography
 
 Approved homepage typography:
