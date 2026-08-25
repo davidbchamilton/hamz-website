@@ -14,7 +14,7 @@ export function MainNavigation() {
     <nav aria-label="Primary navigation" className="relative">
       <button
         type="button"
-        className="inline-flex size-11 items-center justify-center rounded-md border border-ivory/15 text-ivory md:hidden"
+        className="inline-flex size-11 items-center justify-center border border-studio-outline text-ivory transition-colors hover:border-tertiary-gold hover:text-tertiary-gold md:hidden"
         aria-expanded={isOpen}
         aria-controls="mobile-navigation"
         onClick={() => setIsOpen((current) => !current)}
@@ -22,7 +22,7 @@ export function MainNavigation() {
         <span className="sr-only">Toggle navigation</span>
         {isOpen ? <X className="size-5" aria-hidden={true} /> : <Menu className="size-5" aria-hidden={true} />}
       </button>
-      <ul className="hidden items-center gap-1 md:flex">
+      <ul className="hidden items-center gap-7 md:flex">
         {primaryNavigation.map((item) => {
           const isActive = pathname === item.href;
 
@@ -31,10 +31,10 @@ export function MainNavigation() {
               <Link
                 href={item.href}
                 aria-current={isActive ? "page" : undefined}
-                className={`inline-flex min-h-10 items-center gap-2 rounded-md px-3 text-sm font-medium transition ${
+                className={`inline-flex min-h-10 items-center gap-2 font-mono text-[11px] font-bold uppercase tracking-[0.18em] transition ${
                   isActive
-                    ? "bg-ivory/10 text-brass"
-                    : "text-ivory/72 hover:bg-ivory/6 hover:text-ivory"
+                    ? "text-tertiary-gold"
+                    : "text-muted-studio hover:text-tertiary-gold"
                 }`}
               >
                 {item.label === "Beats" ? (
@@ -49,7 +49,7 @@ export function MainNavigation() {
       {isOpen ? (
         <div
           id="mobile-navigation"
-          className="absolute right-0 top-14 w-[min(82vw,22rem)] rounded-md border border-ivory/12 bg-[#171512] p-2 shadow-2xl md:hidden"
+          className="absolute right-0 top-14 w-[min(82vw,22rem)] border border-studio-outline bg-surface-lowest p-2 md:hidden"
         >
           {primaryNavigation.map((item) => {
             const isActive = pathname === item.href;
@@ -59,8 +59,8 @@ export function MainNavigation() {
                 key={item.href}
                 href={item.href}
                 aria-current={isActive ? "page" : undefined}
-                className={`flex min-h-11 items-center rounded-md px-3 text-sm font-semibold ${
-                  isActive ? "bg-brass text-ink" : "text-ivory/78 hover:bg-ivory/8"
+                className={`flex min-h-11 items-center px-3 font-mono text-xs font-bold uppercase tracking-[0.16em] ${
+                  isActive ? "bg-ivory text-ink" : "text-muted-studio hover:bg-surface-container hover:text-tertiary-gold"
                 }`}
                 onClick={() => setIsOpen(false)}
               >

@@ -11,10 +11,10 @@ type ButtonLinkProps = {
 
 const variants = {
   primary:
-    "bg-brass text-ink shadow-[0_14px_35px_rgba(184,138,68,0.2)] hover:bg-brass/90",
+    "bg-ivory text-ink hover:bg-tertiary-gold",
   secondary:
-    "border border-ivory/25 bg-ivory/8 text-ivory hover:border-brass/70 hover:bg-ivory/12",
-  ghost: "text-ivory/80 hover:text-brass"
+    "border border-ivory bg-transparent text-ivory hover:border-tertiary-gold hover:text-tertiary-gold",
+  ghost: "text-muted-studio hover:text-tertiary-gold"
 };
 
 export function ButtonLink({
@@ -27,7 +27,7 @@ export function ButtonLink({
   return (
     <Link
       href={href}
-      className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-md px-5 py-3 text-sm font-semibold transition ${variants[variant]} ${className}`}
+      className={`inline-flex min-h-11 items-center justify-center gap-2 px-5 py-3 font-mono text-xs font-bold uppercase tracking-[0.16em] transition ${variants[variant]} ${className}`}
     >
       {Icon ? <Icon className="size-4" aria-hidden={true} /> : null}
       {children}

@@ -5,7 +5,7 @@
 :root {
   color-scheme: dark;
   --background: #10100e;
-  --foreground: #f8f3e8;
+  --foreground: #e5e2e1;
 }
 
 * {
@@ -21,8 +21,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family:
+    var(--font-hanken),
     Arial,
-    Helvetica,
     sans-serif;
   text-rendering: optimizeLegibility;
 }
@@ -32,7 +32,7 @@ a {
 }
 
 :focus-visible {
-  outline: 3px solid #b88a44;
+  outline: 2px solid #e9c176;
   outline-offset: 3px;
 }
 
@@ -43,14 +43,32 @@ a {
 
 .ambient-stage {
   background:
-    radial-gradient(circle at 12% 8%, rgba(184, 138, 68, 0.18), transparent 24rem),
-    radial-gradient(circle at 84% 18%, rgba(15, 118, 110, 0.12), transparent 22rem),
-    linear-gradient(180deg, #10100e 0%, #171512 48%, #10100e 100%);
+    linear-gradient(rgba(229, 226, 225, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(229, 226, 225, 0.018) 1px, transparent 1px),
+    #141313;
+  background-size: 56px 56px;
 }
 
 .texture-line {
-  background-image: linear-gradient(rgba(248, 243, 232, 0.06) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(229, 226, 225, 0.05) 1px, transparent 1px);
   background-size: 100% 56px;
+}
+
+.grit-overlay {
+  position: relative;
+}
+
+.grit-overlay::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  opacity: 0.18;
+  background-image:
+    linear-gradient(90deg, rgba(229, 226, 225, 0.05) 1px, transparent 1px),
+    linear-gradient(rgba(229, 226, 225, 0.04) 1px, transparent 1px);
+  background-size: 3px 3px;
+  mix-blend-mode: overlay;
 }
 
 @media (prefers-reduced-motion: reduce) {

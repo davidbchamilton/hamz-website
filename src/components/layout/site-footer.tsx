@@ -3,40 +3,72 @@ import { secondaryNavigation, siteIdentity, socialLinks } from "@/data/site";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-ivory/10 bg-[#0c0c0a]">
-      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-12 md:grid-cols-[1.3fr_0.7fr_0.7fr]">
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-brass">
-            {siteIdentity.name}
+    <footer className="border-t border-studio-outline/60 bg-charcoal-depth">
+      <div className="mx-auto grid max-w-[1440px] gap-12 px-6 py-20 md:grid-cols-12 md:px-16 md:py-28">
+        <div className="md:col-span-4">
+          <p className="font-display text-[clamp(3rem,7vw,5rem)] uppercase leading-none text-tertiary-gold">
+            CP.
           </p>
-          <p className="mt-4 max-w-md text-sm leading-6 text-ivory/62">
+          <p className="mt-10 max-w-sm font-mono text-[11px] uppercase leading-5 tracking-[0.12em] text-muted-studio">
             {siteIdentity.description}
           </p>
         </div>
-        <div>
-          <h2 className="text-sm font-semibold text-ivory">Explore</h2>
-          <ul className="mt-4 space-y-2 text-sm text-ivory/62">
+        <div className="grid gap-10 sm:grid-cols-3 md:col-span-8">
+          <div>
+            <h2 className="mb-5 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory">
+              Navigation
+            </h2>
+            <ul className="space-y-3 text-sm uppercase tracking-[0.06em] text-muted-studio">
+              <li>
+                <Link className="transition hover:text-tertiary-gold" href="/beats">
+                  Beats
+                </Link>
+              </li>
+              <li>
+                <Link className="transition hover:text-tertiary-gold" href="/services">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link className="transition hover:text-tertiary-gold" href="/about">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link className="transition hover:text-tertiary-gold" href="/contact">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="mb-5 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory">
+              More
+            </h2>
+            <ul className="space-y-3 text-sm uppercase tracking-[0.06em] text-muted-studio">
             {secondaryNavigation.map((item) => (
               <li key={item.href}>
-                <Link className="transition hover:text-brass" href={item.href}>
+                <Link className="transition hover:text-tertiary-gold" href={item.href}>
                   {item.label}
                 </Link>
               </li>
             ))}
             <li>
-              <Link className="transition hover:text-brass" href="/cma">
+              <Link className="transition hover:text-tertiary-gold" href="/cma">
                 CMA Access
               </Link>
             </li>
           </ul>
-        </div>
-        <div>
-          <h2 className="text-sm font-semibold text-ivory">Contact Links</h2>
-          <ul className="mt-4 space-y-2 text-sm text-ivory/62">
+          </div>
+          <div>
+            <h2 className="mb-5 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory">
+              Socials
+            </h2>
+            <ul className="space-y-3 text-sm uppercase tracking-[0.06em] text-muted-studio">
             {socialLinks.map((link) => (
               <li key={link.label}>
                 {link.href ? (
-                  <a className="transition hover:text-brass" href={link.href}>
+                  <a className="transition hover:text-tertiary-gold" href={link.href}>
                     {link.label}
                   </a>
                 ) : (
@@ -45,10 +77,11 @@ export function SiteFooter() {
               </li>
             ))}
           </ul>
+          </div>
         </div>
       </div>
-      <div className="border-t border-ivory/10 px-5 py-5">
-        <p className="mx-auto max-w-6xl text-xs text-ivory/45">
+      <div className="border-t border-studio-outline/60 px-6 py-5 md:px-16">
+        <p className="mx-auto max-w-[1440px] font-mono text-[11px] uppercase tracking-[0.12em] text-muted-studio/70">
           &copy; {new Date().getFullYear()} {siteIdentity.name}. All rights reserved.
         </p>
       </div>

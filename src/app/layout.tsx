@@ -1,10 +1,30 @@
 import type { Metadata } from "next";
+import { Anton, Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { siteIdentity } from "@/data/site";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://producername.com";
+
+const anton = Anton({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-anton",
+  display: "swap"
+});
+
+const hanken = Hanken_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-hanken",
+  display: "swap"
+});
+
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains",
+  display: "swap"
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -41,7 +61,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-ink text-ivory antialiased">
+      <body
+        className={`${anton.variable} ${hanken.variable} ${jetbrains.variable} min-h-screen bg-surface text-ivory antialiased`}
+      >
         <SiteHeader />
         <main>{children}</main>
         <SiteFooter />

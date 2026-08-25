@@ -2,15 +2,20 @@
 
 ## Creative Direction
 
-- premium
-- contemporary
-- Caribbean
-- music-industry focused
-- cinematic
-- sophisticated
+Approved homepage direction:
+
+**Obsidian & Ivory: Industrial Precision**
+
+- industrial avant-garde
+- brutalist minimalism
+- premium music-production environment
+- technical powerhouse rather than luxury boutique
+- high-fashion editorial structure
+- recording-studio / engineering character
+- aggressive but restrained
 - confident
-- artistic
-- uncluttered
+- raw
+- precise
 
 ## Avoid
 
@@ -38,29 +43,58 @@ Use generic placeholder blocks where actual photography has not yet been supplie
 
 ## Typography
 
-Interim launch direction:
+Approved homepage typography:
 
-- use the system sans-serif stack for Hostinger compatibility and zero font-loading cost
-- large, confident display headings
-- compact uppercase eyebrow labels
-- generous body leading for mobile readability
+- Display/headlines: Anton
+- Body: Hanken Grotesk
+- Technical labels and metadata: JetBrains Mono
 
-Final brand typography should replace this once supplied.
+Headlines should generally be uppercase, condensed, bold in visual presence,
+and editorial. Technical labels should use mono typography for items such as
+section indexes, BPM/key metadata, navigation labels, and microcopy. Do not use
+mono typography for large body-copy areas.
 
 ## Color Palette
 
-Interim launch palette:
+Approved homepage palette:
 
-- Ink: `#10100e`
-- Ivory: `#f8f3e8`
-- Brass: `#b88a44`
-- Reef: `#0f766e`
-- Ember: `#b23a2e`
+- Surface: `#141313`
+- Deep surface: `#0e0e0e`
+- Low container: `#1c1b1b`
+- Container: `#201f1f`
+- Higher surface: `#2b2a2a`
+- Primary ivory: `#e5e2e1`
+- Muted secondary: `#c6c7c2`
+- Muted text: `#c5c7c2`
+- Studio border: `#444748`
+- Accent gold: `#e9c176`
 
-The implemented public site uses a dark editorial base with brass accents,
-subtle reef depth, and restrained warm contrast. Final brand colors should
-replace this once supplied.
+Use gold sparingly for active states, highlighted technical details, hover
+states, and selected emphasis. Do not turn the whole site gold.
+
+## Layout
+
+- 12-column editorial grid on desktop
+- strong edge alignment
+- architectural spacing
+- deliberate asymmetry
+- large negative space
+- content max width around `1440px`
+- approximately `64px` desktop page margins where practical
+- approximately `24px` mobile margins
+- large section gaps around `160px` where the composition supports it
+
+## Shape And Depth
+
+- use sharp 0px geometry for buttons, inputs, cards, imagery, and panels
+- avoid rounded cards, pill controls, glassmorphism, and soft shadows
+- use 1px technical borders and tonal surface changes for depth
+- use inverted ivory blocks for the strongest calls to action
+- subtle grit/noise texture may be implemented with lightweight CSS only
 
 ## Motion
 
-Motion should be restrained and should respect `prefers-reduced-motion`.
+Motion should feel mechanical and precise: color inversion, border brightening,
+small positional shifts, and technical underline movement. Avoid bouncy motion,
+exaggerated scaling, heavy parallax, and animation libraries. Respect
+`prefers-reduced-motion`.

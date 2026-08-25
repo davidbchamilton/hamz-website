@@ -1,17 +1,22 @@
 type MediaPlaceholderProps = {
   label: string;
   className?: string;
+  hideLabel?: boolean;
 };
 
-export function MediaPlaceholder({ label, className = "" }: MediaPlaceholderProps) {
+export function MediaPlaceholder({
+  label,
+  className = "",
+  hideLabel = false
+}: MediaPlaceholderProps) {
   return (
     <div
-      className={`relative flex aspect-video overflow-hidden rounded-md border border-dashed border-ivory/20 bg-[radial-gradient(circle_at_20%_20%,rgba(184,138,68,0.2),transparent_28%),linear-gradient(135deg,rgba(248,243,232,0.12),rgba(15,118,110,0.12))] p-6 text-center text-sm text-ivory/62 ${className}`}
+      className={`grit-overlay relative flex aspect-video overflow-hidden border border-studio-outline bg-[linear-gradient(135deg,rgba(229,226,225,0.12),rgba(14,14,14,0.12)_40%),repeating-linear-gradient(90deg,rgba(233,193,118,0.16)_0_1px,transparent_1px_28px),#121212] p-6 text-center font-mono text-xs uppercase tracking-[0.14em] text-muted-studio ${className}`}
       role="img"
       aria-label={label}
     >
-      <div className="absolute inset-x-0 bottom-0 h-px bg-brass/60" />
-      <span className="m-auto max-w-sm">{label}</span>
+      <div className="absolute inset-x-0 bottom-0 h-px bg-tertiary-gold/70" />
+      {hideLabel ? null : <span className="m-auto max-w-sm">{label}</span>}
     </div>
   );
 }
