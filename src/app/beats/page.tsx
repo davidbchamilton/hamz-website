@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ArrowDown, ArrowRight, Mail, Play, ShoppingCart } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { BeatStarsPanel } from "@/components/media/beatstars-panel";
 import { MediaPlaceholder } from "@/components/media/media-placeholder";
@@ -116,11 +117,21 @@ export default function BeatsPage() {
           <div className="group relative grid gap-8 overflow-hidden border border-studio-outline/45 bg-charcoal-depth/70 p-6 transition-colors hover:bg-charcoal-depth md:grid-cols-12 md:items-center md:p-8">
             <div className="absolute inset-y-0 left-0 w-px bg-tertiary-gold opacity-70" />
             <div className="md:col-span-4">
-              <MediaPlaceholder
-                className="aspect-square"
-                label="Approved beat catalogue artwork pending."
-                hideLabel
-              />
+              <div
+                className="grit-overlay relative flex aspect-square items-center justify-center overflow-hidden border border-studio-outline bg-surface-lowest p-8"
+                role="img"
+                aria-label="HAMZXL logo."
+              >
+                <Image
+                  src="/images/hamzxl-logo.webp"
+                  alt=""
+                  width={512}
+                  height={347}
+                  unoptimized
+                  className="w-full max-w-[18rem] object-contain opacity-90"
+                />
+                <div className="absolute inset-x-0 bottom-0 h-px bg-tertiary-gold/70" />
+              </div>
             </div>
             <div className="md:col-span-8 md:pl-6">
               <div className="flex flex-col justify-between gap-8">

@@ -114,11 +114,21 @@ export default function HomePage() {
 
           <div className="grid gap-8 border border-studio-outline/45 bg-charcoal-depth p-6 md:grid-cols-12 md:p-12">
             <div className="md:col-span-5">
-              <MediaPlaceholder
-                className="aspect-square"
-                label="Approved beat artwork pending."
-                hideLabel
-              />
+              <div
+                className="grit-overlay relative flex aspect-square items-center justify-center overflow-hidden border border-studio-outline bg-surface-lowest p-8"
+                role="img"
+                aria-label="HAMZXL logo."
+              >
+                <Image
+                  src="/images/hamzxl-logo.webp"
+                  alt=""
+                  width={512}
+                  height={347}
+                  unoptimized
+                  className="w-full max-w-[18rem] object-contain opacity-90"
+                />
+                <div className="absolute inset-x-0 bottom-0 h-px bg-tertiary-gold/70" />
+              </div>
             </div>
             <div className="md:col-span-7 md:pl-8">
               <p className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-muted-studio">
