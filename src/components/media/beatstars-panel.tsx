@@ -38,7 +38,7 @@ export function BeatStarsPanel({ compact = false }: BeatStarsPanelProps) {
         title="BeatStars player"
         src={beatStars.embedUrl}
         loading="lazy"
-        className="h-[520px] w-full"
+        className="h-[620px] w-full md:h-[800px]"
         allow="autoplay; encrypted-media"
       />
       {beatStars.profileUrl ? (

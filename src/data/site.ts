@@ -82,15 +82,19 @@ export const emptyPlacements: Placement[] = [];
 
 export const socialLinks: SocialLink[] = [
   { label: "Instagram", href: "", isPending: true },
-  { label: "BeatStars", href: "", isPending: true },
+  {
+    label: "BeatStars",
+    href: "https://player.beatstars.com/?storeId=152867",
+    isPending: false
+  },
   { label: "WhatsApp", href: "", isPending: true },
   { label: "Email", href: "", isPending: true }
 ];
 
 export const beatStars = {
-  profileUrl: "",
-  embedUrl: "",
-  isConfigured: false
+  profileUrl: "https://player.beatstars.com/?storeId=152867",
+  embedUrl: "https://player.beatstars.com/?storeId=152867",
+  isConfigured: true
 };
 
 export const proofPoints: Array<{
