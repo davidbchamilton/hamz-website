@@ -118,10 +118,15 @@ export default function BeatsPage() {
             <div className="mt-8 h-px w-full bg-studio-outline/50" />
           </div>
           <div className="h-[360px] opacity-70 md:col-span-5 md:h-[500px] md:-translate-x-16 md:opacity-80">
-            <MediaPlaceholder
-              className="h-full aspect-auto grayscale"
-              label="Approved studio catalogue photography pending."
-              hideLabel
+            <Image
+              src="/images/beats-main.webp"
+              alt="HAMZXL standing by a chain-link fence."
+              width={1400}
+              height={2098}
+              priority
+              unoptimized
+              sizes="(min-width: 768px) 35vw, calc(100vw - 48px)"
+              className="h-full w-full border border-studio-outline/50 object-cover object-[52%_42%] grayscale"
             />
           </div>
         </div>

@@ -10,6 +10,8 @@ Professional/stage name: HAMZXL
 
 Producer logo: `public/images/hamzxl-logo.webp`
 
+Beats page main image: `public/images/beats-main.webp`
+
 Location: TODO
 
 Primary genres: TODO
