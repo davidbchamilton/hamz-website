@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BeatStarsPanel } from "@/components/media/beatstars-panel";
 import { MediaPlaceholder } from "@/components/media/media-placeholder";
-import { beatStars } from "@/data/site";
+import { beatStars, featuredBeats } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Beats",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const genres = [
   {
     name: "Soca",
-    status: "Curated BeatStars selections pending"
+    status: "Winter Jab Riddim featured"
   },
   {
     name: "Dancehall",
@@ -58,16 +58,20 @@ function SectionMarker({ index, label }: { index: string; label: string }) {
 }
 
 function BeatStarsAction({
+  href,
   className = "",
   children
 }: {
+  href?: string;
   className?: string;
   children: React.ReactNode;
 }) {
-  if (beatStars.profileUrl) {
+  const destination = href ?? beatStars.profileUrl;
+
+  if (destination) {
     return (
       <a
-        href={beatStars.profileUrl}
+        href={destination}
         className={className}
         target="_blank"
         rel="noreferrer"
@@ -85,6 +89,21 @@ function BeatStarsAction({
 }
 
 export default function BeatsPage() {
+  const [primaryBeat] = featuredBeats;
+  const featuredRows = [
+    primaryBeat,
+    {
+      title: "Dancehall",
+      genre: "Dancehall",
+      status: "Approved catalogue metadata pending"
+    },
+    {
+      title: "Afrobeats",
+      genre: "Afrobeats",
+      status: "Featured entries pending approval"
+    }
+  ];
+
   return (
     <>
       <section className="relative mx-auto max-w-[1440px] overflow-hidden px-6 pb-20 pt-16 md:px-16 md:pb-32 md:pt-28">
@@ -197,9 +216,9 @@ export default function BeatsPage() {
           </div>
 
           <div>
-            {genres.map((genre, index) => (
+            {featuredRows.map((beat, index) => (
               <article
-                key={genre.name}
+                key={beat.title}
                 className="group grid gap-5 border-b border-studio-outline/45 py-6 transition-colors hover:bg-charcoal-depth md:grid-cols-12 md:items-center md:px-4"
               >
                 <div className="flex items-center gap-4 md:col-span-1 md:justify-center">
@@ -212,24 +231,60 @@ export default function BeatsPage() {
                   />
                 </div>
                 <div className="md:col-span-2">
-                  <MediaPlaceholder
-                    className="aspect-video p-3"
-                    label={`Approved ${genre.name} beat artwork pending.`}
-                    hideLabel
-                  />
+                  {"artworkUrl" in beat ? (
+                    <Image
+                      src={beat.artworkUrl}
+                      alt={`${beat.title} artwork.`}
+                      width={240}
+                      height={240}
+                      className="aspect-video w-full border border-studio-outline/70 object-cover grayscale transition duration-300 group-hover:grayscale-0"
+                    />
+                  ) : (
+                    <MediaPlaceholder
+                      className="aspect-video p-3"
+                      label={`Approved ${beat.genre} beat artwork pending.`}
+                      hideLabel
+                    />
+                  )}
                 </div>
                 <div className="md:col-span-4">
                   <h3 className="font-display text-[clamp(2.25rem,5vw,3.75rem)] uppercase leading-none text-ivory">
-                    {genre.name}
+                    {beat.title}
                   </h3>
+                  {"mood" in beat ? (
+                    <p className="mt-3 text-sm leading-6 text-muted-studio">
+                      {beat.mood}
+                    </p>
+                  ) : null}
                 </div>
                 <div className="font-mono text-xs font-bold uppercase leading-5 tracking-[0.12em] text-muted-studio md:col-span-3">
-                  <span className="block">{genre.status}</span>
-                  <span className="block text-muted-studio/60">BPM / Key pending</span>
+                  {"bpm" in beat ? (
+                    <>
+                      <span className="block">
+                        <span className="text-muted-studio/60">Genre</span>{" "}
+                        <span className="text-ivory">{beat.genre}</span>
+                      </span>
+                      <span className="block">
+                        <span className="text-muted-studio/60">BPM</span>{" "}
+                        <span className="text-ivory">{beat.bpm}</span>
+                        <span className="px-2 text-muted-studio/40">/</span>
+                        <span className="text-muted-studio/60">Key</span>{" "}
+                        <span className="text-ivory">{beat.musicalKey}</span>
+                      </span>
+                    </>
+                  ) : (
+                    <>
+                      <span className="block">{beat.status}</span>
+                      <span className="block text-muted-studio/60">BPM / Key pending</span>
+                    </>
+                  )}
                 </div>
                 <div className="md:col-span-2 md:flex md:justify-end">
-                  <BeatStarsAction className="inline-flex min-h-11 w-full items-center justify-between border border-studio-outline/55 px-5 py-3 font-mono text-xs font-bold uppercase tracking-[0.14em] text-ivory transition-colors hover:border-tertiary-gold hover:bg-tertiary-gold hover:text-ink md:w-auto">
-                    {beatStars.profileUrl ? "Purchase" : "Request"}
+                  <BeatStarsAction
+                    href={"beatStarsUrl" in beat ? beat.beatStarsUrl : undefined}
+                    className="inline-flex min-h-11 w-full items-center justify-between border border-studio-outline/55 px-5 py-3 font-mono text-xs font-bold uppercase tracking-[0.14em] text-ivory transition-colors hover:border-tertiary-gold hover:bg-tertiary-gold hover:text-ink md:w-auto"
+                  >
+                    {"beatStarsUrl" in beat ? "Purchase" : beatStars.profileUrl ? "Purchase" : "Request"}
                     <ArrowRight className="size-4" aria-hidden={true} />
                   </BeatStarsAction>
                 </div>

@@ -40,6 +40,16 @@ WhatsApp: TODO
 
 Email: TODO
 
+## Featured Beats
+
+- Title: Winter Jab Riddim
+- Genre: Soca
+- BeatStars URL: https://www.beatstars.com/beat/winter-jab-riddim-23115251
+- Artwork: `public/images/winter-jab.webp`
+- BPM: 158
+- Key: Bm
+- Mood/energy: High powered, Caribbean, Jab energy
+
 ## Artists Worked With
 
 TODO

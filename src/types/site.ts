@@ -36,6 +36,16 @@ export type BeatPack = {
   tracks?: BeatPackTrack[];
 };
 
+export type FeaturedBeat = {
+  title: string;
+  genre: string;
+  beatStarsUrl: string;
+  artworkUrl: string;
+  bpm: number;
+  musicalKey: string;
+  mood: string;
+};
+
 export type SocialLink = {
   label: string;
   href: string;

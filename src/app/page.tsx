@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BeatStarsPanel } from "@/components/media/beatstars-panel";
 import { MediaPlaceholder } from "@/components/media/media-placeholder";
-import { emptyPlacements, services, siteIdentity } from "@/data/site";
+import { emptyPlacements, featuredBeats, services, siteIdentity } from "@/data/site";
 
 const metaTags = ["Soca", "Dancehall", "Afrobeats"];
 
@@ -42,6 +42,8 @@ function IndustrialLink({
 }
 
 export default function HomePage() {
+  const [primaryBeat] = featuredBeats;
+
   return (
     <>
       <section className="relative mx-auto min-h-[calc(100svh-85px)] max-w-[1440px] overflow-hidden px-6 py-20 md:px-16 md:py-28">
@@ -135,24 +137,33 @@ export default function HomePage() {
                 Featured catalogue
               </p>
               <h3 className="mt-3 font-display text-[clamp(2.5rem,6vw,4rem)] uppercase leading-none text-ivory">
-                BeatStars
+                Winter Jab
                 <br />
-                Player
+                Riddim
               </h3>
               <div className="my-8 grid grid-cols-3 border border-studio-outline/55">
-                {["Genre", "BPM", "Key"].map((label) => (
+                {[
+                  ["Genre", primaryBeat.genre],
+                  ["BPM", String(primaryBeat.bpm)],
+                  ["Key", primaryBeat.musicalKey]
+                ].map(([label, value]) => (
                   <div key={label} className="border-r border-studio-outline/55 p-4 last:border-r-0">
                     <p className="font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-muted-studio">
                       {label}
                     </p>
-                    <p className="mt-2 text-sm text-ivory">Pending</p>
+                    <p className="mt-2 text-sm text-ivory">{value}</p>
                   </div>
                 ))}
               </div>
+              <p className="mb-8 text-sm leading-6 text-muted-studio">
+                {primaryBeat.mood}
+              </p>
               <BeatStarsPanel compact />
               <Link
-                href="/beats"
+                href={primaryBeat.beatStarsUrl}
                 className="mt-6 inline-flex min-h-12 w-full items-center justify-between border border-studio-outline px-5 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-tertiary-gold hover:bg-tertiary-gold hover:text-ink md:w-auto md:min-w-80"
+                target="_blank"
+                rel="noreferrer"
               >
                 Purchase on BeatStars
                 <ShoppingCart className="size-4" aria-hidden={true} />

@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import type {
+  FeaturedBeat,
   NavigationItem,
   Placement,
   Service,
@@ -96,6 +97,18 @@ export const beatStars = {
   embedUrl: "https://player.beatstars.com/?storeId=152867",
   isConfigured: true
 };
+
+export const featuredBeats: FeaturedBeat[] = [
+  {
+    title: "Winter Jab Riddim",
+    genre: "Soca",
+    beatStarsUrl: "https://www.beatstars.com/beat/winter-jab-riddim-23115251",
+    artworkUrl: "/images/winter-jab.webp",
+    bpm: 158,
+    musicalKey: "Bm",
+    mood: "High powered, Caribbean, Jab energy"
+  }
+];
 
 export const proofPoints: Array<{
   label: string;
