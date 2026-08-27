@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Anton, Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
+import {
+  Anton,
+  Hanken_Grotesk,
+  JetBrains_Mono,
+  Permanent_Marker
+} from "next/font/google";
 import "./globals.css";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
@@ -23,6 +28,13 @@ const hanken = Hanken_Grotesk({
 const jetbrains = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-jetbrains",
+  display: "swap"
+});
+
+const permanentMarker = Permanent_Marker({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-permanent-marker",
   display: "swap"
 });
 
@@ -78,7 +90,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${anton.variable} ${hanken.variable} ${jetbrains.variable} min-h-screen bg-surface text-ivory antialiased`}
+        className={`${anton.variable} ${hanken.variable} ${jetbrains.variable} ${permanentMarker.variable} min-h-screen bg-surface text-ivory antialiased`}
       >
         <SiteHeader />
         <main>{children}</main>

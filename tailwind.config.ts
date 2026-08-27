@@ -27,7 +27,8 @@ const config: Config = {
       fontFamily: {
         display: ["var(--font-anton)", "Impact", "Arial Narrow", "sans-serif"],
         body: ["var(--font-hanken)", "Arial", "Helvetica", "sans-serif"],
-        mono: ["var(--font-jetbrains)", "Consolas", "monospace"]
+        mono: ["var(--font-jetbrains)", "Consolas", "monospace"],
+        accent: ["var(--font-permanent-marker)", "Impact", "sans-serif"]
       }
     }
   },

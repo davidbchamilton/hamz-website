@@ -53,6 +53,7 @@ Approved homepage typography:
 - Display/headlines: Anton
 - Body: Hanken Grotesk
 - Technical labels and metadata: JetBrains Mono
+- Accent/tagline: Permanent Marker
 
 Headlines should generally be uppercase, condensed, bold in visual presence,
 and editorial. Technical labels should use mono typography for items such as

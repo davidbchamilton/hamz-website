@@ -16,13 +16,25 @@ Location: TODO
 
 Primary genres: TODO
 
-Tagline: TODO placeholder only, not approved copy: Caribbean Producer | Dancehall - Soca - Afrobeats
+Tagline: Hamz on the beat, my G
 
 ## Biography
 
-Short bio: TODO
+Short bio: Hamz XL is a Caribbean music producer driven by one thing above all: creating music that makes people feel something.
 
-Long bio: TODO
+Long bio:
+
+Hamz XL is a Caribbean music producer driven by one thing above all: creating music that makes people feel something.
+
+Drawn naturally to dark, emotional and nostalgic melodies, Hamz XL brings that atmosphere into the high-energy worlds of Soca and Bouyon, exploring how unexpected moods, textures and ideas can push Caribbean music in new directions.
+
+His approach to production is rooted in creative freedom. He believes artists should have the space to experiment, take risks and create without being boxed in by conventional ideas of what music is supposed to sound like. To him, music is subjective - if it moves you, it works.
+
+That same philosophy shapes his own development as a producer. Hamz XL is constantly refining his craft, experimenting with new sounds and looking for ways to make each production stronger than the last.
+
+Whether he is creating a beat, collaborating with an artist or developing a new sound, the goal remains the same: make something distinctive, memorable and inspiring.
+
+For collaborations, custom production and beat inquiries, get in touch or explore his available beats.
 
 ## Social Links
 

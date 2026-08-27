@@ -24,9 +24,9 @@ import type {
 export const siteIdentity: SiteIdentity = {
   name: "HAMZXL",
   legalNamePending: false,
-  tagline: "Dancehall, Soca, and Afrobeats production for serious artists.",
+  tagline: "Hamz on the beat, my G",
   description:
-    "Official public website for HAMZXL, a Caribbean music producer. Final biography, credits, links, and media assets are pending approval."
+    "Official public website for Hamz XL, a Caribbean music producer."
 };
 
 export const primaryNavigation: NavigationItem[] = [

@@ -7,6 +7,14 @@ import { emptyPlacements, featuredBeats, services, siteIdentity } from "@/data/s
 
 const metaTags = ["Soca", "Dancehall", "Afrobeats"];
 
+const bioParagraphs = [
+  "Hamz XL is a Caribbean music producer driven by one thing above all: creating music that makes people feel something.",
+  "Drawn naturally to dark, emotional and nostalgic melodies, Hamz XL brings that atmosphere into the high-energy worlds of Soca and Bouyon, exploring how unexpected moods, textures and ideas can push Caribbean music in new directions.",
+  "His approach to production is rooted in creative freedom. He believes artists should have the space to experiment, take risks and create without being boxed in by conventional ideas of what music is supposed to sound like. To him, music is subjective - if it moves you, it works.",
+  "That same philosophy shapes his own development as a producer. Hamz XL is constantly refining his craft, experimenting with new sounds and looking for ways to make each production stronger than the last.",
+  "Whether he is creating a beat, collaborating with an artist or developing a new sound, the goal remains the same: make something distinctive, memorable and inspiring."
+];
+
 function SectionMarker({ index, label }: { index: string; label: string }) {
   return (
     <div className="mb-8 flex items-center gap-4 font-mono text-xs font-bold uppercase tracking-[0.18em] text-muted-studio">
@@ -50,7 +58,7 @@ export default function HomePage() {
         <div className="grid min-h-[760px] grid-cols-1 items-center gap-10 md:grid-cols-12 md:gap-8">
           <div className="relative z-10 order-2 md:order-1 md:col-span-8">
             <p className="mb-6 font-mono text-xs font-bold uppercase tracking-[0.22em] text-muted-studio">
-              Official producer website
+              Hamz XL official website
             </p>
             <h1 className="font-display text-[clamp(4rem,15vw,7.5rem)] uppercase leading-[0.92] tracking-[0.02em] text-ivory">
               Caribbean
@@ -62,8 +70,14 @@ export default function HomePage() {
             <p className="mt-7 max-w-xl font-mono text-xs font-bold uppercase tracking-[0.24em] text-muted-studio">
               {metaTags.join("  |  ")}
             </p>
-            <p className="mt-6 max-w-2xl text-lg leading-7 text-muted-studio">
-              {siteIdentity.tagline}
+            <p className="mt-7 max-w-2xl font-accent text-4xl leading-tight text-ivory sm:text-5xl lg:text-6xl">
+              <span className="relative inline-block -rotate-2">
+                {siteIdentity.tagline}
+                <span
+                  className="absolute -bottom-2 left-0 h-1 w-full bg-tertiary-gold"
+                  aria-hidden={true}
+                />
+              </span>
             </p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <IndustrialLink href="/beats">Browse Beats</IndustrialLink>
@@ -236,17 +250,31 @@ export default function HomePage() {
             <MediaPlaceholder label="Approved studio portrait pending." hideLabel />
           </div>
           <div className="md:col-span-7">
-            <SectionMarker index="03" label="About / Credits" />
+            <SectionMarker index="03" label="Bio / Philosophy" />
             <h2 className="font-display text-[clamp(3rem,7vw,5rem)] uppercase leading-none text-ivory">
-              Producer
+              Hamz
               <br />
-              Profile
+              XL
             </h2>
-            <p className="mt-8 max-w-2xl text-lg leading-7 text-muted-studio">
-              Approved biography, artist relationships, awards, and career
-              highlights are pending. The homepage is structured to receive
-              those facts without inventing credits or claims.
-            </p>
+            <div className="mt-8 max-w-3xl space-y-5 text-base leading-7 text-muted-studio md:text-lg">
+              {bioParagraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+            <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+              <Link
+                href="/contact"
+                className="inline-flex min-h-12 items-center justify-center border border-ivory bg-ivory px-7 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ink transition-colors hover:border-tertiary-gold hover:bg-tertiary-gold"
+              >
+                Get In Touch
+              </Link>
+              <Link
+                href="/beats"
+                className="inline-flex min-h-12 items-center justify-center border border-studio-outline px-7 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-tertiary-gold hover:text-tertiary-gold"
+              >
+                Explore Beats
+              </Link>
+            </div>
             {emptyPlacements.length === 0 ? (
               <div className="mt-10 border border-studio-outline p-5">
                 <p className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-tertiary-gold">
