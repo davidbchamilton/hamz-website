@@ -3,7 +3,6 @@ import { ArrowDown, ArrowRight, Mail, Play, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { BeatStarsPanel } from "@/components/media/beatstars-panel";
-import { MediaPlaceholder } from "@/components/media/media-placeholder";
 import { beatStars, featuredBeats } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -21,18 +20,9 @@ export const metadata: Metadata = {
 };
 
 const genres = [
-  {
-    name: "Soca",
-    status: "Winter Jab Riddim featured"
-  },
-  {
-    name: "Dancehall",
-    status: "School Days Riddim featured"
-  },
-  {
-    name: "Afrobeats",
-    status: "Featured entries pending approval"
-  }
+  "Soca",
+  "Dancehall",
+  "Afrobeats"
 ];
 
 const playerMetadata = [
@@ -89,14 +79,7 @@ function BeatStarsAction({
 }
 
 export default function BeatsPage() {
-  const featuredRows = [
-    ...featuredBeats,
-    {
-      title: "Afrobeats",
-      genre: "Afrobeats",
-      status: "Featured entries pending approval"
-    }
-  ];
+  const featuredRows = featuredBeats.slice(0, 3);
 
   return (
     <>
@@ -207,8 +190,8 @@ export default function BeatsPage() {
             <div className="flex flex-wrap gap-x-6 gap-y-3 font-mono text-xs font-bold uppercase tracking-[0.16em] text-muted-studio">
               <span className="border-b border-tertiary-gold pb-1 text-ivory">All</span>
               {genres.map((genre) => (
-                <span key={genre.name} className="pb-1">
-                  {genre.name}
+                <span key={genre} className="pb-1">
+                  {genre}
                 </span>
               ))}
             </div>
@@ -230,60 +213,41 @@ export default function BeatsPage() {
                   />
                 </div>
                 <div className="md:col-span-2">
-                  {"artworkUrl" in beat ? (
-                    <Image
-                      src={beat.artworkUrl}
-                      alt={`${beat.title} artwork.`}
-                      width={240}
-                      height={240}
-                      className="aspect-video w-full border border-studio-outline/70 object-cover grayscale transition duration-300 group-hover:grayscale-0"
-                    />
-                  ) : (
-                    <MediaPlaceholder
-                      className="aspect-video p-3"
-                      label={`Approved ${beat.genre} beat artwork pending.`}
-                      hideLabel
-                    />
-                  )}
+                  <Image
+                    src={beat.artworkUrl}
+                    alt={`${beat.title} artwork.`}
+                    width={240}
+                    height={240}
+                    className="aspect-video w-full border border-studio-outline/70 object-cover grayscale transition duration-300 group-hover:grayscale-0"
+                  />
                 </div>
                 <div className="md:col-span-4">
                   <h3 className="font-display text-[clamp(2.25rem,5vw,3.75rem)] uppercase leading-none text-ivory">
                     {beat.title}
                   </h3>
-                  {"mood" in beat ? (
-                    <p className="mt-3 text-sm leading-6 text-muted-studio">
-                      {beat.mood}
-                    </p>
-                  ) : null}
+                  <p className="mt-3 text-sm leading-6 text-muted-studio">
+                    {beat.mood}
+                  </p>
                 </div>
                 <div className="font-mono text-xs font-bold uppercase leading-5 tracking-[0.12em] text-muted-studio md:col-span-3">
-                  {"bpm" in beat ? (
-                    <>
-                      <span className="block">
-                        <span className="text-muted-studio/60">Genre</span>{" "}
-                        <span className="text-ivory">{beat.genre}</span>
-                      </span>
-                      <span className="block">
-                        <span className="text-muted-studio/60">BPM</span>{" "}
-                        <span className="text-ivory">{beat.bpm}</span>
-                        <span className="px-2 text-muted-studio/40">/</span>
-                        <span className="text-muted-studio/60">Key</span>{" "}
-                        <span className="text-ivory">{beat.musicalKey}</span>
-                      </span>
-                    </>
-                  ) : (
-                    <>
-                      <span className="block">{beat.status}</span>
-                      <span className="block text-muted-studio/60">BPM / Key pending</span>
-                    </>
-                  )}
+                  <span className="block">
+                    <span className="text-muted-studio/60">Genre</span>{" "}
+                    <span className="text-ivory">{beat.genre}</span>
+                  </span>
+                  <span className="block">
+                    <span className="text-muted-studio/60">BPM</span>{" "}
+                    <span className="text-ivory">{beat.bpm}</span>
+                    <span className="px-2 text-muted-studio/40">/</span>
+                    <span className="text-muted-studio/60">Key</span>{" "}
+                    <span className="text-ivory">{beat.musicalKey}</span>
+                  </span>
                 </div>
                 <div className="md:col-span-2 md:flex md:justify-end">
                   <BeatStarsAction
-                    href={"beatStarsUrl" in beat ? beat.beatStarsUrl : undefined}
+                    href={beat.beatStarsUrl}
                     className="inline-flex min-h-11 w-full items-center justify-between border border-studio-outline/55 px-5 py-3 font-mono text-xs font-bold uppercase tracking-[0.14em] text-ivory transition-colors hover:border-tertiary-gold hover:bg-tertiary-gold hover:text-ink md:w-auto"
                   >
-                    {"beatStarsUrl" in beat ? "Purchase" : beatStars.profileUrl ? "Purchase" : "Request"}
+                    Purchase
                     <ArrowRight className="size-4" aria-hidden={true} />
                   </BeatStarsAction>
                 </div>

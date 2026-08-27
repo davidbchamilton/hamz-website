@@ -60,6 +60,14 @@ Email: TODO
 - Key: GM
 - Mood/energy: Nostalgic, rockback, vacation, dancehall
 
+- Title: Millennium Carnival Riddim
+- Genre: Soca
+- BeatStars URL: https://www.beatstars.com/beat/millennium-carnival-riddim-22842538
+- Artwork: `public/images/millenium.webp`
+- BPM: 155
+- Key: CM
+- Mood/energy: Carnival Tuesday, flag waving, bumper chasing, wild out
+
 ## Artists Worked With
 
 TODO

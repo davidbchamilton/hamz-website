@@ -116,6 +116,15 @@ export const featuredBeats: FeaturedBeat[] = [
     bpm: 110,
     musicalKey: "GM",
     mood: "Nostalgic, rockback, vacation, dancehall"
+  },
+  {
+    title: "Millennium Carnival Riddim",
+    genre: "Soca",
+    beatStarsUrl: "https://www.beatstars.com/beat/millennium-carnival-riddim-22842538",
+    artworkUrl: "/images/millenium.webp",
+    bpm: 155,
+    musicalKey: "CM",
+    mood: "Carnival Tuesday, flag waving, bumper chasing, wild out"
   }
 ];
 
