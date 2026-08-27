@@ -107,6 +107,15 @@ export const featuredBeats: FeaturedBeat[] = [
     bpm: 158,
     musicalKey: "Bm",
     mood: "High powered, Caribbean, Jab energy"
+  },
+  {
+    title: "School Days Riddim",
+    genre: "Dancehall",
+    beatStarsUrl: "https://www.beatstars.com/beat/school-days-riddim-22396596",
+    artworkUrl: "/images/school-days.webp",
+    bpm: 110,
+    musicalKey: "GM",
+    mood: "Nostalgic, rockback, vacation, dancehall"
   }
 ];
 

@@ -52,6 +52,14 @@ Email: TODO
 - Key: Bm
 - Mood/energy: High powered, Caribbean, Jab energy
 
+- Title: School Days Riddim
+- Genre: Dancehall
+- BeatStars URL: https://www.beatstars.com/beat/school-days-riddim-22396596
+- Artwork: `public/images/school-days.webp`
+- BPM: 110
+- Key: GM
+- Mood/energy: Nostalgic, rockback, vacation, dancehall
+
 ## Artists Worked With
 
 TODO

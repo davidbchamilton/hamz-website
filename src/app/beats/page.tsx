@@ -27,7 +27,7 @@ const genres = [
   },
   {
     name: "Dancehall",
-    status: "Approved catalogue metadata pending"
+    status: "School Days Riddim featured"
   },
   {
     name: "Afrobeats",
@@ -43,7 +43,7 @@ const playerMetadata = [
 
 const catalogueNotes = [
   ["01", "BeatStars remains the commercial catalogue and purchase destination."],
-  ["02", "Featured beat names, BPMs, keys, and artwork are pending approved content."],
+  ["02", "Featured beat names, BPMs, keys, and artwork are curated from approved content."],
   ["03", "Local filtering will only be added when curated beat metadata exists."]
 ];
 
@@ -89,14 +89,8 @@ function BeatStarsAction({
 }
 
 export default function BeatsPage() {
-  const [primaryBeat] = featuredBeats;
   const featuredRows = [
-    primaryBeat,
-    {
-      title: "Dancehall",
-      genre: "Dancehall",
-      status: "Approved catalogue metadata pending"
-    },
+    ...featuredBeats,
     {
       title: "Afrobeats",
       genre: "Afrobeats",
