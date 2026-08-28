@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const pendingDossier = [
   ["Origin", "Caribbean"],
   ["Biography", "Approved"],
-  ["Credits", "1 verified placement"]
+  ["Credits", `${placements.length} verified placements`]
 ];
 
 const bioParagraphs = [
@@ -244,7 +244,7 @@ export default function AboutPage() {
           <div className="md:col-span-5">
             <BadgeCheck className="mb-5 size-6 text-tertiary-gold" aria-hidden={true} />
             <p className="text-lg leading-8 text-muted-studio">
-              Rum Cause It is published as the first verified placement.
+              Verified placements are published from approved release details.
               Additional credits, awards, press, collaborations, and career
               history will appear only after they are approved.
             </p>

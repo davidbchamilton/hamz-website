@@ -89,6 +89,26 @@ export const placements: Placement[] = [
     spotifyUrl: "https://open.spotify.com/track/2AE0LCQSByCQQU7elfhzlM?si=72f5c06bd0394c34",
     appleMusicUrl: "https://music.apple.com/tt/album/rum-cause-it/1848717721?i=1848717722",
     youtubeUrl: "https://www.youtube.com/watch?v=9a0CeiloosA"
+  },
+  {
+    song: "Ghost Mansion Riddim",
+    artist: "Da Face, Xinbad, DNA 868 Muzik, Chenko, Ken",
+    year: 2025,
+    producerRole: "Producer, Composer",
+    artworkUrl: "/images/ghost-mansion.webp",
+    spotifyUrl: "https://open.spotify.com/album/6F4P2zutPcvf7WxHBpGHbA?si=qpc153XOS6iZfNUpWpNEFg",
+    appleMusicUrl: "https://music.apple.com/us/album/ghost-mansion-riddim-ep-ep/1788497562",
+    youtubeUrl: "https://www.youtube.com/watch?v=9a0CeiloosA"
+  },
+  {
+    song: "Parang Z Riddim",
+    artist: "Da Face, Starflo, DNA 868 Muzik, Chenko, Shaq",
+    year: 2025,
+    producerRole: "Producer, Composer",
+    artworkUrl: "/images/parangz.webp",
+    spotifyUrl: "https://open.spotify.com/album/6KGRDasyG8FCMQMr1b5jnU?si=f069dd92140f4b83",
+    appleMusicUrl: "https://music.apple.com/tt/album/parang-z-riddim-ep/1857484429",
+    youtubeUrl: "https://www.youtube.com/watch?v=q5wV9ONUpdI&list=PLOjmy-UpL7ztFSMNH5RN4yYniIfiNMOqH"
   }
 ];
 

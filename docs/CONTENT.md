@@ -110,6 +110,24 @@ For each eventual placement record:
 - Apple Music: https://music.apple.com/tt/album/rum-cause-it/1848717721?i=1848717722
 - YouTube: https://www.youtube.com/watch?v=9a0CeiloosA
 
+- Song: Ghost Mansion Riddim
+- Artist: Da Face, Xinbad, DNA 868 Muzik, Chenko, Ken
+- Year: 2025
+- Producer role: Producer, Composer
+- Artwork: `public/images/ghost-mansion.webp`
+- Spotify: https://open.spotify.com/album/6F4P2zutPcvf7WxHBpGHbA?si=qpc153XOS6iZfNUpWpNEFg
+- Apple Music: https://music.apple.com/us/album/ghost-mansion-riddim-ep-ep/1788497562
+- YouTube: https://www.youtube.com/watch?v=9a0CeiloosA
+
+- Song: Parang Z Riddim
+- Artist: Da Face, Starflo, DNA 868 Muzik, Chenko, Shaq
+- Year: 2025
+- Producer role: Producer, Composer
+- Artwork: `public/images/parangz.webp`
+- Spotify: https://open.spotify.com/album/6KGRDasyG8FCMQMr1b5jnU?si=f069dd92140f4b83
+- Apple Music: https://music.apple.com/tt/album/parang-z-riddim-ep/1857484429
+- YouTube: https://www.youtube.com/watch?v=q5wV9ONUpdI&list=PLOjmy-UpL7ztFSMNH5RN4yYniIfiNMOqH
+
 ## Services
 
 - Custom Beats
