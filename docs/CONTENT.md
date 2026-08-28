@@ -46,13 +46,13 @@ Instagram: https://www.instagram.com/hamzxl868
 
 TikTok: https://www.tiktok.com/@hamzxl
 
-YouTube: TODO
+YouTube: https://www.youtube.com/@Hamzxl868
 
 BeatStars: https://player.beatstars.com/?storeId=152867
 
-Spotify: TODO
+Spotify: https://open.spotify.com/artist/0nTNt8ZurMb2CE4UDENcJf?si=_f7xylSDRbiPrlZEpK6DIg
 
-Apple Music: TODO
+Apple Music: https://music.apple.com/tt/artist/hamz-xl/1788043200
 
 WhatsApp: 18687619145
 
@@ -99,7 +99,7 @@ Derived from approved placements:
 
 ## Awards and Nominations
 
-TODO
+Hide for now.
 
 ## Studio / Tools
 
@@ -172,7 +172,7 @@ For each eventual placement record:
 
 ## Testimonials
 
-TODO
+Hide for now.
 
 ## Press
 

@@ -43,7 +43,7 @@ Eventually contain:
 
 - concise producer biography
 - artists worked with
-- awards/nominations
+- awards/nominations only if later approved for display
 - optional studio setup
 - professional photography
 

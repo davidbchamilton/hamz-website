@@ -132,6 +132,18 @@ export const socialLinks: SocialLink[] = [
     href: "https://www.tiktok.com/@hamzxl"
   },
   {
+    label: "YouTube",
+    href: "https://www.youtube.com/@Hamzxl868"
+  },
+  {
+    label: "Spotify",
+    href: "https://open.spotify.com/artist/0nTNt8ZurMb2CE4UDENcJf?si=_f7xylSDRbiPrlZEpK6DIg"
+  },
+  {
+    label: "Apple Music",
+    href: "https://music.apple.com/tt/artist/hamz-xl/1788043200"
+  },
+  {
     label: "BeatStars",
     href: "https://player.beatstars.com/?storeId=152867"
   },
@@ -216,7 +228,7 @@ export const proofPoints: Array<{
   },
   {
     label: "Content integrity",
-    description: "Credits, awards, press, and collaborations appear only after approval.",
+    description: "Credits, press, and collaborations appear only after approval.",
     icon: BadgeCheck
   }
 ];
@@ -238,6 +250,24 @@ export const contactChannels = [
     detail: "Watch short-form studio clips, beat previews, and release updates.",
     href: "https://www.tiktok.com/@hamzxl",
     icon: Music2
+  },
+  {
+    label: "YouTube",
+    detail: "Watch releases, riddim uploads, visuals, and official HAMZXL content.",
+    href: "https://www.youtube.com/@Hamzxl868",
+    icon: Radio
+  },
+  {
+    label: "Spotify",
+    detail: "Stream HAMZXL artist releases and credited projects on Spotify.",
+    href: "https://open.spotify.com/artist/0nTNt8ZurMb2CE4UDENcJf?si=_f7xylSDRbiPrlZEpK6DIg",
+    icon: Disc3
+  },
+  {
+    label: "Apple Music",
+    detail: "Stream HAMZXL artist releases and credited projects on Apple Music.",
+    href: "https://music.apple.com/tt/artist/hamz-xl/1788043200",
+    icon: Headphones
   },
   {
     label: "BeatStars",

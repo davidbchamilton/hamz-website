@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About | Caribbean Music Producer",
     description:
-      "A producer profile prepared for verified biography, credits, collaborations, recognition, and studio photography."
+      "A producer profile with verified biography, credits, collaborators, and studio details."
   }
 };
 
@@ -39,14 +39,6 @@ const collaborators = Array.from(
     )
   )
 );
-
-const contentSlots = [
-  {
-    label: "Awards / Nominations",
-    detail:
-      "Recognition records are reserved until award names, categories, dates, and nomination status are verified."
-  }
-];
 
 function SectionMarker({ index, label }: { index: string; label: string }) {
   return (
@@ -243,27 +235,9 @@ export default function AboutPage() {
                 </div>
               </article>
             ) : null}
-            {contentSlots.map((slot, index) => (
-              <article
-                key={slot.label}
-                className="group grid gap-5 border-b border-studio-outline py-7 transition-colors hover:bg-surface-container md:grid-cols-12 md:items-center md:px-4"
-              >
-                <span className="font-mono text-sm font-bold text-muted-studio/70 group-hover:text-tertiary-gold md:col-span-1">
-                  {String(index + 3).padStart(2, "0")}
-                </span>
-                <div className="md:col-span-5">
-                  <h2 className="font-display text-[clamp(2.5rem,6vw,4.5rem)] uppercase leading-none text-ivory">
-                    {slot.label}
-                  </h2>
-                </div>
-                <p className="max-w-2xl text-sm leading-6 text-muted-studio md:col-span-6">
-                  {slot.detail}
-                </p>
-              </article>
-            ))}
             <article className="grid gap-5 border-b border-studio-outline py-7 transition-colors hover:bg-surface-container md:grid-cols-12 md:px-4">
               <span className="font-mono text-sm font-bold text-muted-studio/70 md:col-span-1">
-                {String(contentSlots.length + 3).padStart(2, "0")}
+                03
               </span>
               <div className="md:col-span-5">
                 <h2 className="font-display text-[clamp(2.5rem,6vw,4.5rem)] uppercase leading-none text-ivory">
@@ -309,8 +283,8 @@ export default function AboutPage() {
             <BadgeCheck className="mb-5 size-6 text-tertiary-gold" aria-hidden={true} />
             <p className="text-lg leading-8 text-muted-studio">
               Verified placements are published from approved release details.
-              Additional credits, awards, press, collaborations, and career
-              history will appear only after they are approved.
+              Additional credits, press, collaborations, and career history
+              will appear only after they are approved.
             </p>
             <Link
               href="/placements"

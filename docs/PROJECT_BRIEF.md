@@ -40,7 +40,6 @@ Visitors should be able to:
 - reach BeatStars
 - discover production service inquiry paths
 - view placements and credits
-- view awards/nominations
 - contact the producer
 - access social media
 - access press material
