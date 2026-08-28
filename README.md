@@ -59,6 +59,12 @@ Copy `.env.example` to `.env.local` for local development secrets when integrati
 
 Do not commit `.env.local` or any other secret-bearing environment file.
 
+For contact form email delivery, configure:
+
+- `RESEND_API_KEY`
+- `EMAIL_FROM`
+- `EMAIL_TO`
+
 ## Deployment
 
 Production is intended for Hostinger managed Node.js hosting using Node.js 22.x. The expected flow is local/Codex development to Git, GitHub, Hostinger, and the production domain.

@@ -124,14 +124,31 @@ export const placements: Placement[] = [
 ];
 
 export const socialLinks: SocialLink[] = [
-  { label: "Instagram", href: "", isPending: true },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/hamzxl868",
+    isPending: false
+  },
+  {
+    label: "TikTok",
+    href: "https://www.tiktok.com/@hamzxl",
+    isPending: false
+  },
   {
     label: "BeatStars",
     href: "https://player.beatstars.com/?storeId=152867",
     isPending: false
   },
-  { label: "WhatsApp", href: "", isPending: true },
-  { label: "Email", href: "", isPending: true }
+  {
+    label: "WhatsApp",
+    href: "https://wa.me/18687619145",
+    isPending: false
+  },
+  {
+    label: "Email",
+    href: "mailto:hamzxl868@gmail.com",
+    isPending: false
+  }
 ];
 
 export const beatStars = {
@@ -218,26 +235,32 @@ export const serviceSelectOptions = services.map((service) => ({
 export const contactChannels = [
   {
     label: "Instagram",
-    detail: "Pending approved profile URL",
-    href: "",
+    detail: "Follow HAMZXL for updates, releases, studio clips, and direct messages.",
+    href: "https://www.instagram.com/hamzxl868",
     icon: Users
   },
   {
+    label: "TikTok",
+    detail: "Watch short-form studio clips, beat previews, and release updates.",
+    href: "https://www.tiktok.com/@hamzxl",
+    icon: Music2
+  },
+  {
     label: "BeatStars",
-    detail: "Pending approved profile URL",
-    href: "",
+    detail: "Listen, license, and purchase beats through the official BeatStars player.",
+    href: beatStars.profileUrl,
     icon: Headphones
   },
   {
     label: "WhatsApp",
-    detail: "Pending approved number or link",
-    href: "",
+    detail: "Message directly on WhatsApp for beat, collaboration, and production inquiries.",
+    href: "https://wa.me/18687619145",
     icon: Radio
   },
   {
     label: "Email",
-    detail: "Pending approved email address",
-    href: "",
+    detail: "Send production, custom beat, placement, and business inquiries by email.",
+    href: "mailto:hamzxl868@gmail.com",
     icon: Mail
   }
 ];

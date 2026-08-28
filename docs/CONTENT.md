@@ -42,21 +42,21 @@ For collaborations, custom production and beat inquiries, get in touch or explor
 
 ## Social Links
 
-Instagram: TODO
+Instagram: https://www.instagram.com/hamzxl868
 
-TikTok: TODO
+TikTok: https://www.tiktok.com/@hamzxl
 
 YouTube: TODO
 
-BeatStars: TODO
+BeatStars: https://player.beatstars.com/?storeId=152867
 
 Spotify: TODO
 
 Apple Music: TODO
 
-WhatsApp: TODO
+WhatsApp: 18687619145
 
-Email: TODO
+Email: hamzxl868@gmail.com
 
 ## Featured Beats
 

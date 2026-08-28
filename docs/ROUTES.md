@@ -63,10 +63,14 @@ Eventually contain:
 
 Current phase:
 
-- form UI is present
+- form posts to `/api/contact`
+- server-side input validation is present
+- email delivery uses Resend when `RESEND_API_KEY`, `EMAIL_FROM`, and
+  `EMAIL_TO` are configured
+- a honeypot field is present as a lightweight first spam screen
 - `?service=<service-slug>` preselects the relevant service
-- form submission remains disabled until an approved email backend, validation,
-  and anti-spam controls are implemented
+- Cloudflare Turnstile or an approved equivalent is still recommended before
+  high-traffic production use
 
 ## `/placements`
 
