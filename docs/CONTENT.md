@@ -176,7 +176,8 @@ Hide for now.
 
 ## Press
 
-TODO
+Hide press/media links, interviews, quotes, and downloadable press-kit assets
+for now.
 
 ## Caribbean Music Awards
 

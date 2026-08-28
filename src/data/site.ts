@@ -37,8 +37,7 @@ export const primaryNavigation: NavigationItem[] = [
 ];
 
 export const secondaryNavigation: NavigationItem[] = [
-  { href: "/placements", label: "Placements" },
-  { href: "/press", label: "Press" }
+  { href: "/placements", label: "Placements" }
 ];
 
 export const services: Service[] = [
@@ -228,7 +227,7 @@ export const proofPoints: Array<{
   },
   {
     label: "Content integrity",
-    description: "Credits, press, and collaborations appear only after approval.",
+    description: "Credits and collaborations appear only after approval.",
     icon: BadgeCheck
   }
 ];

@@ -42,7 +42,6 @@ Visitors should be able to:
 - view placements and credits
 - contact the producer
 - access social media
-- access press material
 - request production work
 
 Invited artists should additionally be able to:
@@ -65,6 +64,8 @@ Expected main navigation:
 Additional public routes:
 
 - Placements
-- Press
 
 The CMA beat-pack portal should not appear in the main navigation.
+
+Press/media links, interviews, quotes, and downloadable press-kit assets are
+hidden until approved material is provided.

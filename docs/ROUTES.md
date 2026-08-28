@@ -78,12 +78,10 @@ Released records using the producer's production.
 
 ## `/press`
 
-Eventually contain:
+Hidden from public navigation and sitemap for now.
 
-- press photos
-- logo assets
-- electronic press kit
-- media coverage where provided
+Do not display press/media links, interviews, quotes, or downloadable press-kit
+assets until approved material is provided.
 
 ## `/cma`
 
