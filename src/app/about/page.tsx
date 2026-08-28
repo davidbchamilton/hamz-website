@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { ArrowDown, ArrowRight, BadgeCheck, Mail } from "lucide-react";
 import Link from "next/link";
 import { MediaPlaceholder } from "@/components/media/media-placeholder";
-import { proofPoints } from "@/data/site";
+import { placements, proofPoints } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "About the Caribbean music producer, with approved biography and career details pending.",
+    "About Hamz XL, a Caribbean music producer creating emotional, distinctive Soca, Bouyon, Dancehall, and Afrobeats production.",
   alternates: {
     canonical: "/about"
   },
@@ -19,9 +19,17 @@ export const metadata: Metadata = {
 };
 
 const pendingDossier = [
-  ["Origin", "Pending approved location"],
-  ["Biography", "Pending approved profile"],
-  ["Credits", "Pending verified placements"]
+  ["Origin", "Caribbean"],
+  ["Biography", "Approved"],
+  ["Credits", "1 verified placement"]
+];
+
+const bioParagraphs = [
+  "Hamz XL is a Caribbean music producer driven by one thing above all: creating music that makes people feel something.",
+  "Drawn naturally to dark, emotional and nostalgic melodies, Hamz XL brings that atmosphere into the high-energy worlds of Soca and Bouyon, exploring how unexpected moods, textures and ideas can push Caribbean music in new directions.",
+  "His approach to production is rooted in creative freedom. He believes artists should have the space to experiment, take risks and create without being boxed in by conventional ideas of what music is supposed to sound like. To him, music is subjective - if it moves you, it works.",
+  "That same philosophy shapes his own development as a producer. Hamz XL is constantly refining his craft, experimenting with new sounds and looking for ways to make each production stronger than the last.",
+  "Whether he is creating a beat, collaborating with an artist or developing a new sound, the goal remains the same: make something distinctive, memorable and inspiring."
 ];
 
 const contentSlots = [
@@ -53,6 +61,8 @@ function SectionMarker({ index, label }: { index: string; label: string }) {
 }
 
 export default function AboutPage() {
+  const [primaryPlacement] = placements;
+
   return (
     <>
       <section className="relative mx-auto min-h-[calc(100svh-85px)] max-w-[1440px] overflow-hidden px-6 py-20 md:px-16 md:py-28">
@@ -94,28 +104,36 @@ export default function AboutPage() {
           <div className="md:col-span-4">
             <div className="inline-flex items-center gap-3 border border-studio-outline bg-surface-high px-4 py-3 font-mono text-xs font-bold uppercase tracking-[0.16em] text-muted-studio">
               <span className="size-2 bg-tertiary-gold" />
-              Profile pending
+              Producer profile
             </div>
           </div>
           <div className="md:col-span-8">
             <h2 className="font-display text-[clamp(3rem,8vw,6rem)] uppercase leading-[0.95] tracking-[0.02em] text-ivory">
-              Built For
+              Music That
               <br />
-              Caribbean
+              Moves
               <br />
-              <span className="text-studio-outline">Records.</span>
+              <span className="text-studio-outline">People.</span>
             </h2>
             <div className="mt-10 max-w-3xl space-y-6 text-lg leading-8 text-muted-studio">
-              <p>
-                The site is structured for a concise biography, a deeper
-                professional profile, selected collaborators, and verified
-                career milestones once approved content is supplied.
-              </p>
-              <p>
-                Until then, this page keeps the editorial profile intact
-                without publishing unverified origin details, quotes, artist
-                relationships, awards, or studio claims.
-              </p>
+              {bioParagraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+            <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+              <Link
+                href="/contact"
+                className="inline-flex min-h-12 items-center justify-center border border-ivory bg-ivory px-7 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ink transition-colors hover:border-tertiary-gold hover:bg-tertiary-gold"
+              >
+                Get in touch
+              </Link>
+              <Link
+                href="/beats"
+                className="inline-flex min-h-12 items-center justify-center gap-3 border border-studio-outline px-7 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-tertiary-gold hover:text-tertiary-gold"
+              >
+                Explore beats
+                <ArrowRight className="size-4" aria-hidden={true} />
+              </Link>
             </div>
           </div>
         </div>
@@ -166,13 +184,38 @@ export default function AboutPage() {
         <div className="mx-auto max-w-[1440px]">
           <SectionMarker index="03" label="Verified dossier" />
           <div className="border-t border-studio-outline">
+            {primaryPlacement ? (
+              <Link
+                href="/placements"
+                className="group grid gap-5 border-b border-studio-outline py-7 transition-colors hover:bg-surface-container md:grid-cols-12 md:items-center md:px-4"
+              >
+                <span className="font-mono text-sm font-bold text-muted-studio/70 group-hover:text-tertiary-gold md:col-span-1">
+                  01
+                </span>
+                <div className="md:col-span-5">
+                  <h2 className="font-display text-[clamp(2.5rem,6vw,4.5rem)] uppercase leading-none text-ivory">
+                    Selected Placement
+                  </h2>
+                </div>
+                <div className="max-w-2xl text-sm leading-6 text-muted-studio md:col-span-6">
+                  <p>
+                    {primaryPlacement.song} by {primaryPlacement.artist} /{" "}
+                    {primaryPlacement.year} / {primaryPlacement.producerRole}
+                  </p>
+                  <span className="mt-4 inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory group-hover:text-tertiary-gold">
+                    View placement
+                    <ArrowRight className="size-4" aria-hidden={true} />
+                  </span>
+                </div>
+              </Link>
+            ) : null}
             {contentSlots.map((slot, index) => (
               <article
                 key={slot.label}
                 className="group grid gap-5 border-b border-studio-outline py-7 transition-colors hover:bg-surface-container md:grid-cols-12 md:items-center md:px-4"
               >
                 <span className="font-mono text-sm font-bold text-muted-studio/70 group-hover:text-tertiary-gold md:col-span-1">
-                  {String(index + 1).padStart(2, "0")}
+                  {String(index + 2).padStart(2, "0")}
                 </span>
                 <div className="md:col-span-5">
                   <h2 className="font-display text-[clamp(2.5rem,6vw,4.5rem)] uppercase leading-none text-ivory">
@@ -201,15 +244,15 @@ export default function AboutPage() {
           <div className="md:col-span-5">
             <BadgeCheck className="mb-5 size-6 text-tertiary-gold" aria-hidden={true} />
             <p className="text-lg leading-8 text-muted-studio">
-              Credits, awards, press, collaborations, and career history will
-              appear only after they are approved. The visual system is ready;
-              the factual record stays protected.
+              Rum Cause It is published as the first verified placement.
+              Additional credits, awards, press, collaborations, and career
+              history will appear only after they are approved.
             </p>
             <Link
               href="/placements"
               className="mt-8 inline-flex min-h-12 items-center gap-3 border border-studio-outline px-6 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-tertiary-gold hover:text-tertiary-gold"
             >
-              View placements
+              View placement
               <ArrowRight className="size-4" aria-hidden={true} />
             </Link>
           </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BeatStarsPanel } from "@/components/media/beatstars-panel";
 import { MediaPlaceholder } from "@/components/media/media-placeholder";
-import { emptyPlacements, featuredBeats, services, siteIdentity } from "@/data/site";
+import { featuredBeats, placements, services, siteIdentity } from "@/data/site";
 
 const metaTags = ["Soca", "Dancehall", "Afrobeats"];
 
@@ -275,24 +275,24 @@ export default function HomePage() {
                 Explore Beats
               </Link>
             </div>
-            {emptyPlacements.length === 0 ? (
-              <div className="mt-10 border border-studio-outline p-5">
-                <p className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-tertiary-gold">
-                  Selected placements
-                </p>
-                <p className="mt-4 text-sm leading-6 text-muted-studio">
-                  No verified placements are published yet because no approved
-                  placement records were supplied.
-                </p>
-                <Link
-                  href="/placements"
-                  className="mt-5 inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory hover:text-tertiary-gold"
-                >
-                  View placements
-                  <ArrowRight className="size-4" aria-hidden={true} />
-                </Link>
-              </div>
-            ) : null}
+            <div className="mt-10 border border-studio-outline p-5">
+              <p className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-tertiary-gold">
+                Selected placement
+              </p>
+              <p className="mt-4 font-display text-3xl uppercase leading-none text-ivory">
+                {placements[0].song}
+              </p>
+              <p className="mt-3 text-sm leading-6 text-muted-studio">
+                {placements[0].artist} / {placements[0].year} / {placements[0].producerRole}
+              </p>
+              <Link
+                href="/placements"
+                className="mt-5 inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory hover:text-tertiary-gold"
+              >
+                View placements
+                <ArrowRight className="size-4" aria-hidden={true} />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

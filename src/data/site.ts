@@ -79,7 +79,18 @@ export const services: Service[] = [
   }
 ];
 
-export const emptyPlacements: Placement[] = [];
+export const placements: Placement[] = [
+  {
+    song: "Rum Cause It",
+    artist: "Linky First",
+    year: 2025,
+    producerRole: "Producer",
+    artworkUrl: "/images/rum-cause-it.webp",
+    spotifyUrl: "https://open.spotify.com/track/2AE0LCQSByCQQU7elfhzlM?si=72f5c06bd0394c34",
+    appleMusicUrl: "https://music.apple.com/tt/album/rum-cause-it/1848717721?i=1848717722",
+    youtubeUrl: "https://www.youtube.com/watch?v=9a0CeiloosA"
+  }
+];
 
 export const socialLinks: SocialLink[] = [
   { label: "Instagram", href: "", isPending: true },

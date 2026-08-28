@@ -101,6 +101,15 @@ For each eventual placement record:
 - Apple Music link
 - YouTube link
 
+- Song: Rum Cause It
+- Artist: Linky First
+- Year: 2025
+- Producer role: Producer
+- Artwork: `public/images/rum-cause-it.webp`
+- Spotify: https://open.spotify.com/track/2AE0LCQSByCQQU7elfhzlM?si=72f5c06bd0394c34
+- Apple Music: https://music.apple.com/tt/album/rum-cause-it/1848717721?i=1848717722
+- YouTube: https://www.youtube.com/watch?v=9a0CeiloosA
+
 ## Services
 
 - Custom Beats
