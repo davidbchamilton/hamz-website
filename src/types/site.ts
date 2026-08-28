@@ -46,6 +46,18 @@ export type FeaturedBeat = {
   mood: string;
 };
 
+export type StudioTools = {
+  daw: string;
+  plugins: string[];
+  instruments: string[];
+  audioInterface: string;
+  monitorsHeadphones: string;
+  microphones: string[];
+  recordingSpace: string;
+  workflow: string[];
+  specialties: string[];
+};
+
 export type SocialLink = {
   label: string;
   href: string;

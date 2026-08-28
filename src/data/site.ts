@@ -18,7 +18,8 @@ import type {
   Placement,
   Service,
   SiteIdentity,
-  SocialLink
+  SocialLink,
+  StudioTools
 } from "@/types/site";
 
 export const siteIdentity: SiteIdentity = {
@@ -109,6 +110,16 @@ export const placements: Placement[] = [
     spotifyUrl: "https://open.spotify.com/album/6KGRDasyG8FCMQMr1b5jnU?si=f069dd92140f4b83",
     appleMusicUrl: "https://music.apple.com/tt/album/parang-z-riddim-ep/1857484429",
     youtubeUrl: "https://www.youtube.com/watch?v=q5wV9ONUpdI&list=PLOjmy-UpL7ztFSMNH5RN4yYniIfiNMOqH"
+  },
+  {
+    song: "Crapaud Smoke Dey Pipe",
+    artist: "Da Face",
+    year: 2025,
+    producerRole: "Producer, Composer",
+    artworkUrl: "/images/crapaud-smoke-dey-pipe.webp",
+    spotifyUrl: "https://open.spotify.com/album/6uEdPs5k77kkCNRqZkJUAb?si=mjI0bs-vR_STawFrtBm2FQ",
+    appleMusicUrl: "https://music.apple.com/tt/album/crapaud-smoke-dey-pipe-double-album/1823157120",
+    youtubeUrl: "https://youtu.be/IX-iZgeY-dE?si=rZw1aAmetOIqjD63"
   }
 ];
 
@@ -158,6 +169,19 @@ export const featuredBeats: FeaturedBeat[] = [
     mood: "Carnival Tuesday, flag waving, bumper chasing, wild out"
   }
 ];
+
+export const studioTools: StudioTools = {
+  daw: "Studio One",
+  plugins: ["Waves", "Sonnox", "Cable Guys"],
+  instruments: ["Guitar", "Alesis V49 MIDI Keyboard"],
+  audioInterface: "Universal Audio Apollo Solo",
+  monitorsHeadphones:
+    "Audio-Technica ATH-M50X, Yamaha HS8 8-Inch Powered Studio Monitor Pair",
+  microphones: ["AKG Pro Audio P220"],
+  recordingSpace: "Home studio and commercial studio",
+  workflow: ["Beatmaking", "Vocal production", "Mixing", "Arrangement", "Mastering"],
+  specialties: ["Soca", "Bouyon", "Jab", "Hip Hop", "Dancehall"]
+};
 
 export const proofPoints: Array<{
   label: string;

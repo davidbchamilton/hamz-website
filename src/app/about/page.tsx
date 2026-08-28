@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { ArrowDown, ArrowRight, BadgeCheck, Mail } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
-import { MediaPlaceholder } from "@/components/media/media-placeholder";
-import { placements, proofPoints } from "@/data/site";
+import { placements, proofPoints, studioTools } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "About",
@@ -32,21 +32,19 @@ const bioParagraphs = [
   "Whether he is creating a beat, collaborating with an artist or developing a new sound, the goal remains the same: make something distinctive, memorable and inspiring."
 ];
 
+const collaborators = Array.from(
+  new Set(
+    placements.flatMap((placement) =>
+      placement.artist.split(",").map((artist) => artist.trim())
+    )
+  )
+);
+
 const contentSlots = [
-  {
-    label: "Artists / Collaborators",
-    detail:
-      "Approved collaborator names have not been supplied, so no artist relationships are published here."
-  },
   {
     label: "Awards / Nominations",
     detail:
       "Recognition records are reserved until award names, categories, dates, and nomination status are verified."
-  },
-  {
-    label: "Studio / Tools",
-    detail:
-      "Studio setup and equipment details will be added only after approved technical information is available."
   }
 ];
 
@@ -67,10 +65,15 @@ export default function AboutPage() {
     <>
       <section className="relative mx-auto min-h-[calc(100svh-85px)] max-w-[1440px] overflow-hidden px-6 py-20 md:px-16 md:py-28">
         <div className="absolute inset-x-6 top-10 h-[58%] opacity-60 md:inset-x-16 md:top-16 md:h-[72%]">
-          <MediaPlaceholder
-            className="h-full aspect-auto grayscale"
-            label="Approved producer portrait or studio photography pending."
-            hideLabel
+          <Image
+            src="/images/about-main.webp"
+            alt="HAMZXL pointing to his Crapaud Smoke Dey Pipe shirt by a chain-link fence."
+            width={1400}
+            height={2100}
+            priority
+            unoptimized
+            sizes="(min-width: 768px) calc(100vw - 128px), calc(100vw - 48px)"
+            className="h-full w-full border border-studio-outline/50 object-cover object-[50%_36%] grayscale"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/55 to-transparent" />
         </div>
@@ -142,10 +145,14 @@ export default function AboutPage() {
       <section className="border-y border-studio-outline/60 bg-surface-lowest px-6 py-24 md:px-16 md:py-40">
         <div className="mx-auto grid max-w-[1440px] gap-12 md:grid-cols-12 md:items-center md:gap-8">
           <div className="md:order-2 md:col-span-6">
-            <MediaPlaceholder
-              className="aspect-square grayscale"
-              label="Approved studio or equipment photography pending."
-              hideLabel
+            <Image
+              src="/images/analog-digital-studio.webp"
+              alt="Analog studio hardware, guitar, MIDI keys, and digital waveform light in a Caribbean studio setting."
+              width={1200}
+              height={1200}
+              unoptimized
+              sizes="(min-width: 768px) 42vw, calc(100vw - 48px)"
+              className="aspect-square w-full border border-studio-outline/50 object-cover grayscale"
             />
           </div>
           <div className="md:order-1 md:col-span-6 md:pr-12">
@@ -209,13 +216,40 @@ export default function AboutPage() {
                 </div>
               </Link>
             ) : null}
+            {collaborators.length > 0 ? (
+              <article className="grid gap-5 border-b border-studio-outline py-7 transition-colors hover:bg-surface-container md:grid-cols-12 md:items-center md:px-4">
+                <span className="font-mono text-sm font-bold text-muted-studio/70 md:col-span-1">
+                  02
+                </span>
+                <div className="md:col-span-5">
+                  <h2 className="font-display text-[clamp(2.5rem,6vw,4.5rem)] uppercase leading-none text-ivory">
+                    Artists / Collaborators
+                  </h2>
+                </div>
+                <div className="md:col-span-6">
+                  <p className="max-w-2xl text-sm leading-6 text-muted-studio">
+                    Artist names are populated from verified placement records.
+                  </p>
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    {collaborators.map((artist) => (
+                      <span
+                        key={artist}
+                        className="border border-studio-outline/70 px-3 py-2 font-mono text-[11px] font-bold uppercase tracking-[0.12em] text-ivory"
+                      >
+                        {artist}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </article>
+            ) : null}
             {contentSlots.map((slot, index) => (
               <article
                 key={slot.label}
                 className="group grid gap-5 border-b border-studio-outline py-7 transition-colors hover:bg-surface-container md:grid-cols-12 md:items-center md:px-4"
               >
                 <span className="font-mono text-sm font-bold text-muted-studio/70 group-hover:text-tertiary-gold md:col-span-1">
-                  {String(index + 2).padStart(2, "0")}
+                  {String(index + 3).padStart(2, "0")}
                 </span>
                 <div className="md:col-span-5">
                   <h2 className="font-display text-[clamp(2.5rem,6vw,4.5rem)] uppercase leading-none text-ivory">
@@ -227,6 +261,36 @@ export default function AboutPage() {
                 </p>
               </article>
             ))}
+            <article className="grid gap-5 border-b border-studio-outline py-7 transition-colors hover:bg-surface-container md:grid-cols-12 md:px-4">
+              <span className="font-mono text-sm font-bold text-muted-studio/70 md:col-span-1">
+                {String(contentSlots.length + 3).padStart(2, "0")}
+              </span>
+              <div className="md:col-span-5">
+                <h2 className="font-display text-[clamp(2.5rem,6vw,4.5rem)] uppercase leading-none text-ivory">
+                  Studio / Tools
+                </h2>
+              </div>
+              <div className="grid gap-5 text-sm leading-6 text-muted-studio md:col-span-6 sm:grid-cols-2">
+                {[
+                  ["DAW", studioTools.daw],
+                  ["Plugins", studioTools.plugins.join(", ")],
+                  ["Instruments", studioTools.instruments.join(", ")],
+                  ["Interface", studioTools.audioInterface],
+                  ["Monitoring", studioTools.monitorsHeadphones],
+                  ["Microphone", studioTools.microphones.join(", ")],
+                  ["Recording Space", studioTools.recordingSpace],
+                  ["Workflow", studioTools.workflow.join(", ")],
+                  ["Specialties", studioTools.specialties.join(", ")]
+                ].map(([label, value]) => (
+                  <div key={label} className="border-l border-studio-outline/70 pl-4">
+                    <p className="font-mono text-[11px] font-bold uppercase tracking-[0.14em] text-tertiary-gold">
+                      {label}
+                    </p>
+                    <p className="mt-2">{value}</p>
+                  </div>
+                ))}
+              </div>
+            </article>
           </div>
         </div>
       </section>

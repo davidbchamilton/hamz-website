@@ -12,6 +12,10 @@ Producer logo: `public/images/hamzxl-logo.webp`
 
 Beats page main image: `public/images/beats-main.webp`
 
+About page main image: `public/images/about-main.webp`
+
+About methodology image: `public/images/analog-digital-studio.webp`
+
 Location: TODO
 
 Primary genres: TODO
@@ -82,11 +86,32 @@ Email: TODO
 
 ## Artists Worked With
 
-TODO
+Derived from approved placements:
+
+- Linky First
+- Da Face
+- Xinbad
+- DNA 868 Muzik
+- Chenko
+- Ken
+- Starflo
+- Shaq
 
 ## Awards and Nominations
 
 TODO
+
+## Studio / Tools
+
+- DAW: Studio One
+- Plugins: Waves, Sonnox, Cable Guys
+- Instruments: Guitar, Alesis V49 MIDI Keyboard
+- Audio interface: Universal Audio Apollo Solo
+- Monitors/headphones: Audio-Technica ATH-M50X, Yamaha HS8 8-Inch Powered Studio Monitor Pair
+- Microphones: AKG Pro Audio P220
+- Recording space: Home studio and commercial studio
+- Workflow: Beatmaking, vocal production, mixing, arrangement, mastering
+- Specialties: Soca, Bouyon, Jab, Hip Hop, Dancehall
 
 ## Placements
 
@@ -127,6 +152,15 @@ For each eventual placement record:
 - Spotify: https://open.spotify.com/album/6KGRDasyG8FCMQMr1b5jnU?si=f069dd92140f4b83
 - Apple Music: https://music.apple.com/tt/album/parang-z-riddim-ep/1857484429
 - YouTube: https://www.youtube.com/watch?v=q5wV9ONUpdI&list=PLOjmy-UpL7ztFSMNH5RN4yYniIfiNMOqH
+
+- Song: Crapaud Smoke Dey Pipe
+- Artist: Da Face
+- Year: 2025
+- Producer role: Producer, Composer
+- Artwork: `public/images/crapaud-smoke-dey-pipe.webp`
+- Spotify: https://open.spotify.com/album/6uEdPs5k77kkCNRqZkJUAb?si=mjI0bs-vR_STawFrtBm2FQ
+- Apple Music: https://music.apple.com/tt/album/crapaud-smoke-dey-pipe-double-album/1823157120
+- YouTube: https://youtu.be/IX-iZgeY-dE?si=rZw1aAmetOIqjD63
 
 ## Services
 

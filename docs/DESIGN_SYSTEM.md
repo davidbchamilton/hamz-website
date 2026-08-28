@@ -46,6 +46,10 @@ the site. Keep dimensions appropriate for the largest rendered use case so
 homepage, catalogue, press, and profile imagery do not ship oversized source
 files or unnecessary bandwidth.
 
+Generated conceptual images may be used for abstract studio/process sections
+when they do not imply factual producer photography, credits, endorsements, or
+specific studio claims.
+
 ## Typography
 
 Approved homepage typography:
