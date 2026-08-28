@@ -24,7 +24,6 @@ import type {
 
 export const siteIdentity: SiteIdentity = {
   name: "HAMZXL",
-  legalNamePending: false,
   tagline: "Hamz on the beat, my G",
   description:
     "Official public website for Hamz XL, a Caribbean music producer."
@@ -126,28 +125,23 @@ export const placements: Placement[] = [
 export const socialLinks: SocialLink[] = [
   {
     label: "Instagram",
-    href: "https://www.instagram.com/hamzxl868",
-    isPending: false
+    href: "https://www.instagram.com/hamzxl868"
   },
   {
     label: "TikTok",
-    href: "https://www.tiktok.com/@hamzxl",
-    isPending: false
+    href: "https://www.tiktok.com/@hamzxl"
   },
   {
     label: "BeatStars",
-    href: "https://player.beatstars.com/?storeId=152867",
-    isPending: false
+    href: "https://player.beatstars.com/?storeId=152867"
   },
   {
     label: "WhatsApp",
-    href: "https://wa.me/18687619145",
-    isPending: false
+    href: "https://wa.me/18687619145"
   },
   {
     label: "Email",
-    href: "mailto:hamzxl868@gmail.com",
-    isPending: false
+    href: "mailto:hamzxl868@gmail.com"
   }
 ];
 

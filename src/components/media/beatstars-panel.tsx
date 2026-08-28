@@ -15,10 +15,10 @@ export function BeatStarsPanel({ compact = false }: BeatStarsPanelProps) {
           </span>
           <div>
             <h3 className="font-display text-2xl uppercase tracking-[0.03em] text-ivory">
-              BeatStars catalogue pending
+              BeatStars catalogue unavailable
             </h3>
             <p className="mt-1 font-mono text-xs uppercase tracking-[0.14em] text-muted-studio">
-              Approved BeatStars embed and profile URL have not been supplied yet.
+              Use the contact page for beat, licensing, and production inquiries.
             </p>
           </div>
         </div>

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   }
 };
 
-const pendingDossier = [
+const profileFacts = [
   ["Origin", "Caribbean"],
   ["Biography", "Approved"],
   ["Credits", `${placements.length} verified placements`]
@@ -88,7 +88,7 @@ export default function AboutPage() {
             <span className="text-tertiary-gold">Of Sound.</span>
           </h1>
           <div className="mt-8 grid gap-4 border-t border-studio-outline/55 pt-5 md:grid-cols-3">
-            {pendingDossier.map(([label, value]) => (
+            {profileFacts.map(([label, value]) => (
               <div key={label} className="font-mono text-xs font-bold uppercase tracking-[0.14em]">
                 <p className="text-muted-studio/70">{label}</p>
                 <p className="mt-2 text-muted-studio">{value}</p>

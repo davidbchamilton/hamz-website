@@ -68,13 +68,9 @@ export function SiteFooter() {
             <ul className="space-y-3 text-sm uppercase tracking-[0.06em] text-muted-studio">
             {socialLinks.map((link) => (
               <li key={link.label}>
-                {link.href ? (
-                  <a className="transition hover:text-tertiary-gold" href={link.href}>
-                    {link.label}
-                  </a>
-                ) : (
-                  <span>{link.label} pending</span>
-                )}
+                <a className="transition hover:text-tertiary-gold" href={link.href}>
+                  {link.label}
+                </a>
               </li>
             ))}
           </ul>

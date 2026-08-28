@@ -324,8 +324,8 @@ export default function BeatsPage() {
                 <ShoppingCart className="size-4" aria-hidden={true} />
               </BeatStarsAction>
               <p className="mt-5 text-sm leading-6 text-muted-studio">
-                Approved BeatStars link and embed are still pending in project
-                content, so this CTA falls back to contact until configured.
+                BeatStars remains the official catalogue for listening,
+                licensing, and purchases.
               </p>
             </div>
           </div>

@@ -2,7 +2,6 @@ import { ArrowDown, ArrowRight, CalendarDays, Mail, Music2, ShoppingCart } from 
 import Image from "next/image";
 import Link from "next/link";
 import { BeatStarsPanel } from "@/components/media/beatstars-panel";
-import { MediaPlaceholder } from "@/components/media/media-placeholder";
 import { featuredBeats, placements, services, siteIdentity } from "@/data/site";
 
 const metaTags = ["Soca", "Dancehall", "Afrobeats"];
@@ -247,7 +246,15 @@ export default function HomePage() {
       <section className="border-y border-studio-outline/60 px-6 py-24 md:px-16 md:py-40">
         <div className="mx-auto grid max-w-[1440px] gap-12 md:grid-cols-12 md:gap-8">
           <div className="md:col-span-5">
-            <MediaPlaceholder label="Approved studio portrait pending." hideLabel />
+            <Image
+              src="/images/about-main.webp"
+              alt="HAMZXL pointing to his Crapaud Smoke Dey Pipe shirt by a chain-link fence."
+              width={1400}
+              height={2100}
+              unoptimized
+              sizes="(min-width: 768px) 34vw, calc(100vw - 48px)"
+              className="aspect-[4/5] w-full border border-studio-outline/50 object-cover object-[50%_34%] grayscale"
+            />
           </div>
           <div className="md:col-span-7">
             <SectionMarker index="03" label="Bio / Philosophy" />

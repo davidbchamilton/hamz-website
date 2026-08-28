@@ -17,11 +17,13 @@ Future implementation should include:
 
 ## Potential Search Themes
 
-- `[PRODUCER NAME]`
-- `[PRODUCER NAME] producer`
-- `[PRODUCER NAME] Trinidad`
+- HAMZXL
+- HAMZXL producer
+- HAMZXL Caribbean producer
 - Caribbean producer
 - soca producer
+- bouyon producer
+- jab producer
 - dancehall producer
 - Afrobeats producer
 

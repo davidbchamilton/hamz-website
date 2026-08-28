@@ -2,7 +2,7 @@
 
 ## Project Purpose
 
-Official website for `[PRODUCER NAME]`, a Caribbean music producer.
+Official website for HAMZXL, a Caribbean music producer.
 
 Immediate objective:
 

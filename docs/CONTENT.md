@@ -4,7 +4,7 @@ Codex must not fabricate missing content. Use clearly marked TODO placeholders u
 
 ## Identity
 
-Producer name: TODO
+Public producer name: HAMZXL
 
 Professional/stage name: HAMZXL
 
@@ -16,9 +16,9 @@ About page main image: `public/images/about-main.webp`
 
 About methodology image: `public/images/analog-digital-studio.webp`
 
-Location: TODO
+Location: Caribbean
 
-Primary genres: TODO
+Primary genres: Soca, Bouyon, Jab, Hip Hop, Dancehall
 
 Tagline: Hamz on the beat, my G
 

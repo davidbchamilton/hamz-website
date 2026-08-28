@@ -10,7 +10,7 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { siteIdentity } from "@/data/site";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://producername.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hamzxl868.com";
 
 const anton = Anton({
   subsets: ["latin"],

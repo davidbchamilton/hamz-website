@@ -61,7 +61,6 @@ export type StudioTools = {
 export type SocialLink = {
   label: string;
   href: string;
-  isPending?: boolean;
 };
 
 export type NavigationItem = {
@@ -71,7 +70,6 @@ export type NavigationItem = {
 
 export type SiteIdentity = {
   name: string;
-  legalNamePending: boolean;
   tagline: string;
   description: string;
 };

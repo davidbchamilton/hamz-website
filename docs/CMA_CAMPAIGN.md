@@ -13,7 +13,7 @@
 
 QR cards lead to:
 
-`https://producername.com/cma`
+`https://hamzxl868.com/cma`
 
 Artists:
 

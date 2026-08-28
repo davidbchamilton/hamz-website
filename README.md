@@ -1,6 +1,6 @@
 # Producer Site
 
-Official website and future private beat-pack portal for `[PRODUCER NAME]`, a Caribbean music producer.
+Official website and future private beat-pack portal for HAMZXL, a Caribbean music producer.
 
 This repository is being prepared for Codex-assisted development, GitHub source control, and Hostinger managed Node.js hosting.
 
@@ -13,7 +13,8 @@ This repository is being prepared for Codex-assisted development, GitHub source 
 - Lucide React
 - Node.js 22.x
 
-Supabase, BeatStars integrations, email delivery, analytics, and abuse protection are planned for later phases.
+Supabase private beat-pack access, analytics, and abuse protection are planned for later phases.
+BeatStars playback and contact-form email delivery are already wired at the application level.
 
 ## Prerequisites
 
@@ -41,10 +42,9 @@ npm run build
 
 ## Directory Overview
 
-- `src/app`: App Router pages and API route skeletons.
+- `src/app`: App Router pages and API routes.
 - `src/components`: Shared layout, navigation, section, UI, and media components.
-- `src/data`: Typed placeholder content structures.
-- `src/lib`: Future integration boundaries for Supabase, auth, and analytics.
+- `src/data`: Typed site content structures.
 - `src/types`: Shared TypeScript types.
 - `public`: Public images, video, press, logo, and Open Graph assets.
 - `docs`: Project source of truth for architecture, content, security, deployment, and QA.
