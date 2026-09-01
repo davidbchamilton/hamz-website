@@ -118,6 +118,8 @@ export const placements: Placement[] = [
 export const selectedPlacement =
   placements.find((placement) => placement.song === "Rum Cause It") ?? placements[0];
 
+export const approvedCollaborators = ["Karthur M", "Chryston Floyd"];
+
 export const socialLinks: SocialLink[] = [
   {
     label: "Instagram",

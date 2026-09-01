@@ -86,10 +86,11 @@ Email: hamzxl868@gmail.com
 
 ## Artists Worked With
 
-Derived from approved placements:
+Derived from approved placements and approved collaborator names:
 
 - Linky First
 - Karthur M
+- Chryston Floyd
 - Da Face
 - Xinbad
 - DNA 868 Muzik

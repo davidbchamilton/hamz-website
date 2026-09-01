@@ -2,7 +2,13 @@ import type { Metadata } from "next";
 import { ArrowDown, ArrowRight, BadgeCheck, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { placements, proofPoints, selectedPlacement, studioTools } from "@/data/site";
+import {
+  approvedCollaborators,
+  placements,
+  proofPoints,
+  selectedPlacement,
+  studioTools
+} from "@/data/site";
 
 export const metadata: Metadata = {
   title: "About",
@@ -34,9 +40,11 @@ const bioParagraphs = [
 
 const collaborators = Array.from(
   new Set(
-    placements.flatMap((placement) =>
-      placement.artist.split(",").map((artist) => artist.trim())
-    )
+    placements
+      .flatMap((placement) =>
+        placement.artist.split(",").map((artist) => artist.trim())
+      )
+      .concat(approvedCollaborators)
   )
 );
 
