@@ -77,10 +77,14 @@ Approved homepage palette:
 - Muted secondary: `#c6c7c2`
 - Muted text: `#c5c7c2`
 - Studio border: `#444748`
-- Accent gold: `#e9c176`
+- Primary accent violet: `#744fcd`
+- Accessible violet text: `#9d7cff`
 
-Use gold sparingly for active states, highlighted technical details, hover
-states, and selected emphasis. Do not turn the whole site gold.
+Use violet sparingly for active states, highlighted technical details, hover
+states, focus indicators, selected emphasis, and restrained technical accents.
+Do not turn the whole site violet. Use the accessible violet text shade for
+small labels and links on dark surfaces. When primary violet is used as a
+filled control background, pair it with white text for accessible contrast.
 
 ## Layout
 

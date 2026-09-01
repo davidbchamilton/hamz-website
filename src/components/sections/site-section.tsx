@@ -21,7 +21,7 @@ export function SiteSection({
         {eyebrow || title || intro ? (
           <div className="mb-10 max-w-3xl">
             {eyebrow ? (
-              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-brass">
+              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-accent-violet-text">
                 {eyebrow}
               </p>
             ) : null}

@@ -14,7 +14,7 @@ export function MainNavigation() {
     <nav aria-label="Primary navigation" className="relative">
       <button
         type="button"
-        className="inline-flex size-11 items-center justify-center border border-studio-outline text-ivory transition-colors hover:border-tertiary-gold hover:text-tertiary-gold md:hidden"
+        className="inline-flex size-11 items-center justify-center border border-studio-outline text-ivory transition-colors hover:border-accent-violet hover:text-accent-violet-text md:hidden"
         aria-expanded={isOpen}
         aria-controls="mobile-navigation"
         onClick={() => setIsOpen((current) => !current)}
@@ -33,8 +33,8 @@ export function MainNavigation() {
                 aria-current={isActive ? "page" : undefined}
                 className={`inline-flex min-h-10 items-center gap-2 font-mono text-[11px] font-bold uppercase tracking-[0.18em] transition ${
                   isActive
-                    ? "text-tertiary-gold"
-                    : "text-muted-studio hover:text-tertiary-gold"
+                    ? "text-accent-violet-text"
+                    : "text-muted-studio hover:text-accent-violet-text"
                 }`}
               >
                 {item.label === "Beats" ? (
@@ -60,7 +60,7 @@ export function MainNavigation() {
                 href={item.href}
                 aria-current={isActive ? "page" : undefined}
                 className={`flex min-h-11 items-center px-3 font-mono text-xs font-bold uppercase tracking-[0.16em] ${
-                  isActive ? "bg-ivory text-ink" : "text-muted-studio hover:bg-surface-container hover:text-tertiary-gold"
+                  isActive ? "bg-ivory text-ink" : "text-muted-studio hover:bg-surface-container hover:text-accent-violet-text"
                 }`}
                 onClick={() => setIsOpen(false)}
               >

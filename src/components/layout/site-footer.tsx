@@ -26,17 +26,17 @@ export function SiteFooter() {
             </h2>
             <ul className="space-y-3 text-sm uppercase tracking-[0.06em] text-muted-studio">
               <li>
-                <Link className="transition hover:text-tertiary-gold" href="/beats">
+                <Link className="transition hover:text-accent-violet-text" href="/beats">
                   Beats
                 </Link>
               </li>
               <li>
-                <Link className="transition hover:text-tertiary-gold" href="/about">
+                <Link className="transition hover:text-accent-violet-text" href="/about">
                   About
                 </Link>
               </li>
               <li>
-                <Link className="transition hover:text-tertiary-gold" href="/contact">
+                <Link className="transition hover:text-accent-violet-text" href="/contact">
                   Contact
                 </Link>
               </li>
@@ -49,13 +49,13 @@ export function SiteFooter() {
             <ul className="space-y-3 text-sm uppercase tracking-[0.06em] text-muted-studio">
             {secondaryNavigation.map((item) => (
               <li key={item.href}>
-                <Link className="transition hover:text-tertiary-gold" href={item.href}>
+                <Link className="transition hover:text-accent-violet-text" href={item.href}>
                   {item.label}
                 </Link>
               </li>
             ))}
             <li>
-              <Link className="transition hover:text-tertiary-gold" href="/cma">
+              <Link className="transition hover:text-accent-violet-text" href="/cma">
                 CMA Access
               </Link>
             </li>
@@ -68,7 +68,7 @@ export function SiteFooter() {
             <ul className="space-y-3 text-sm uppercase tracking-[0.06em] text-muted-studio">
             {socialLinks.map((link) => (
               <li key={link.label}>
-                <a className="transition hover:text-tertiary-gold" href={link.href}>
+                <a className="transition hover:text-accent-violet-text" href={link.href}>
                   {link.label}
                 </a>
               </li>

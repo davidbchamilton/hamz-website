@@ -9,7 +9,7 @@ export function PageIntro({ eyebrow, title, children }: PageIntroProps) {
     <section className="ambient-stage texture-line px-5 py-16 sm:py-20">
       <div className="mx-auto max-w-6xl">
         {eyebrow ? (
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-brass">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-accent-violet-text">
             {eyebrow}
           </p>
         ) : null}

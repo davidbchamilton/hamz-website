@@ -43,7 +43,7 @@ const collaborators = Array.from(
 function SectionMarker({ index, label }: { index: string; label: string }) {
   return (
     <div className="mb-8 inline-flex items-center gap-4 font-mono text-xs font-bold uppercase tracking-[0.18em] text-muted-studio">
-      <span className="text-tertiary-gold">{index}</span>
+      <span className="text-accent-violet-text">{index}</span>
       <span className="h-px w-12 bg-studio-outline" />
       <span>{label}</span>
     </div>
@@ -77,7 +77,7 @@ export default function AboutPage() {
             <br />
             Architect
             <br />
-            <span className="text-tertiary-gold">Of Sound.</span>
+            <span className="text-accent-violet">Of Sound.</span>
           </h1>
           <div className="mt-8 grid gap-4 border-t border-studio-outline/55 pt-5 md:grid-cols-3">
             {profileFacts.map(([label, value]) => (
@@ -98,7 +98,7 @@ export default function AboutPage() {
         <div className="mx-auto grid max-w-[1440px] gap-12 md:grid-cols-12 md:gap-8">
           <div className="md:col-span-4">
             <div className="inline-flex items-center gap-3 border border-studio-outline bg-surface-high px-4 py-3 font-mono text-xs font-bold uppercase tracking-[0.16em] text-muted-studio">
-              <span className="size-2 bg-tertiary-gold" />
+              <span className="size-2 bg-accent-violet" />
               Producer profile
             </div>
           </div>
@@ -118,13 +118,13 @@ export default function AboutPage() {
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <Link
                 href="/contact"
-                className="inline-flex min-h-12 items-center justify-center border border-ivory bg-ivory px-7 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ink transition-colors hover:border-tertiary-gold hover:bg-tertiary-gold"
+                className="inline-flex min-h-12 items-center justify-center border border-ivory bg-ivory px-7 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ink transition-colors hover:border-accent-violet hover:bg-accent-violet hover:text-white"
               >
                 Get in touch
               </Link>
               <Link
                 href="/beats"
-                className="inline-flex min-h-12 items-center justify-center gap-3 border border-studio-outline px-7 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-tertiary-gold hover:text-tertiary-gold"
+                className="inline-flex min-h-12 items-center justify-center gap-3 border border-studio-outline px-7 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-accent-violet hover:text-accent-violet-text"
               >
                 Explore beats
                 <ArrowRight className="size-4" aria-hidden={true} />
@@ -164,7 +164,7 @@ export default function AboutPage() {
 
                 return (
                   <article key={point.label} className="border-l-2 border-studio-outline pl-6">
-                    <Icon className="mb-4 size-5 text-tertiary-gold" aria-hidden={true} />
+                    <Icon className="mb-4 size-5 text-accent-violet-text" aria-hidden={true} />
                     <h3 className="font-mono text-sm font-bold uppercase tracking-[0.14em] text-ivory">
                       {point.label}
                     </h3>
@@ -188,7 +188,7 @@ export default function AboutPage() {
                 href="/placements"
                 className="group grid gap-5 border-b border-studio-outline py-7 transition-colors hover:bg-surface-container md:grid-cols-12 md:items-center md:px-4"
               >
-                <span className="font-mono text-sm font-bold text-muted-studio/70 group-hover:text-tertiary-gold md:col-span-1">
+                <span className="font-mono text-sm font-bold text-muted-studio/70 group-hover:text-accent-violet-text md:col-span-1">
                   01
                 </span>
                 <div className="md:col-span-5">
@@ -201,7 +201,7 @@ export default function AboutPage() {
                     {primaryPlacement.song} by {primaryPlacement.artist} /{" "}
                     {primaryPlacement.year} / {primaryPlacement.producerRole}
                   </p>
-                  <span className="mt-4 inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory group-hover:text-tertiary-gold">
+                  <span className="mt-4 inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory group-hover:text-accent-violet-text">
                     View placement
                     <ArrowRight className="size-4" aria-hidden={true} />
                   </span>
@@ -257,7 +257,7 @@ export default function AboutPage() {
                   ["Specialties", studioTools.specialties.join(", ")]
                 ].map(([label, value]) => (
                   <div key={label} className="border-l border-studio-outline/70 pl-4">
-                    <p className="font-mono text-[11px] font-bold uppercase tracking-[0.14em] text-tertiary-gold">
+                    <p className="font-mono text-[11px] font-bold uppercase tracking-[0.14em] text-accent-violet-text">
                       {label}
                     </p>
                     <p className="mt-2">{value}</p>
@@ -280,7 +280,7 @@ export default function AboutPage() {
             </h2>
           </div>
           <div className="md:col-span-5">
-            <BadgeCheck className="mb-5 size-6 text-tertiary-gold" aria-hidden={true} />
+            <BadgeCheck className="mb-5 size-6 text-accent-violet-text" aria-hidden={true} />
             <p className="text-lg leading-8 text-muted-studio">
               Verified placements are published from approved release details.
               Additional credits, press, collaborations, and career history
@@ -288,7 +288,7 @@ export default function AboutPage() {
             </p>
             <Link
               href="/placements"
-              className="mt-8 inline-flex min-h-12 items-center gap-3 border border-studio-outline px-6 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-tertiary-gold hover:text-tertiary-gold"
+              className="mt-8 inline-flex min-h-12 items-center gap-3 border border-studio-outline px-6 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-accent-violet hover:text-accent-violet-text"
             >
               View placement
               <ArrowRight className="size-4" aria-hidden={true} />
@@ -306,7 +306,7 @@ export default function AboutPage() {
           </h2>
           <Link
             href="/contact"
-            className="mt-8 inline-flex min-h-12 items-center gap-3 border border-ink bg-ink px-8 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-tertiary-gold hover:bg-tertiary-gold hover:text-ink"
+            className="mt-8 inline-flex min-h-12 items-center gap-3 border border-ink bg-ink px-8 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-accent-violet hover:bg-accent-violet hover:text-white"
           >
             Start a project
             <Mail className="size-4" aria-hidden={true} />

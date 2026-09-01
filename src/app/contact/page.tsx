@@ -43,15 +43,15 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
               {contactChannels.map((channel) => {
                 const Icon = channel.icon;
                 const cardClass =
-                  "block rounded-md border border-ivory/10 bg-ivory/[0.03] p-5 transition-colors hover:border-brass hover:bg-ivory/[0.06]";
+                  "block rounded-md border border-ivory/10 bg-ivory/[0.03] p-5 transition-colors hover:border-accent-violet hover:bg-ivory/[0.06]";
 
                 const cardContent = (
                   <>
-                    <Icon className="size-5 text-brass" aria-hidden={true} />
+                    <Icon className="size-5 text-accent-violet-text" aria-hidden={true} />
                     <div className="mt-4 flex items-center justify-between gap-4">
                       <h3 className="font-semibold text-ivory">{channel.label}</h3>
                       {channel.href ? (
-                        <ArrowUpRight className="size-4 text-brass" aria-hidden={true} />
+                        <ArrowUpRight className="size-4 text-accent-violet-text" aria-hidden={true} />
                       ) : null}
                     </div>
                     <p className="mt-2 text-sm leading-6 text-ivory/58">{channel.detail}</p>

@@ -11,7 +11,6 @@ const config: Config = {
       colors: {
         ink: "#0e0e0e",
         ivory: "#e5e2e1",
-        brass: "#e9c176",
         reef: "#444748",
         ember: "#c6c7c2",
         surface: "#141313",
@@ -22,7 +21,8 @@ const config: Config = {
         "studio-outline": "#444748",
         "muted-studio": "#c5c7c2",
         "charcoal-depth": "#121212",
-        "tertiary-gold": "#e9c176"
+        "accent-violet": "#744fcd",
+        "accent-violet-text": "#9d7cff"
       },
       fontFamily: {
         display: ["var(--font-anton)", "Impact", "Arial Narrow", "sans-serif"],

@@ -13,7 +13,7 @@ export default function CmaPage() {
     <section className="ambient-stage texture-line min-h-[calc(100vh-4.75rem)] px-5 py-16 sm:py-20">
       <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-center">
         <div>
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-brass">
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-accent-violet-text">
             Private CMA access
           </p>
           <h1 className="max-w-4xl text-5xl font-semibold leading-tight text-ivory sm:text-6xl">
@@ -34,14 +34,14 @@ export default function CmaPage() {
 
               return (
                 <div key={label as string} className="border-t border-ivory/12 pt-4">
-                  <CmaIcon className="size-5 text-brass" aria-hidden={true} />
+                  <CmaIcon className="size-5 text-accent-violet-text" aria-hidden={true} />
                   <p className="mt-3 text-sm font-semibold text-ivory">{label as string}</p>
                 </div>
               );
             })}
           </div>
         </div>
-        <div className="rounded-md border border-brass/25 bg-[#171512]/90 p-6 shadow-2xl sm:p-8">
+        <div className="rounded-md border border-accent-violet/25 bg-[#171512]/90 p-6 shadow-2xl sm:p-8">
           <MediaPlaceholder
             className="mb-6"
             label="Approved CMA or producer campaign imagery pending."

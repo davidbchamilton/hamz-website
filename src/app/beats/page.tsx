@@ -40,7 +40,7 @@ const catalogueNotes = [
 function SectionMarker({ index, label }: { index: string; label: string }) {
   return (
     <div className="mb-8 inline-flex items-center gap-4 font-mono text-xs font-bold uppercase tracking-[0.18em] text-muted-studio">
-      <span className="text-tertiary-gold">{index}</span>
+      <span className="text-accent-violet-text">{index}</span>
       <span className="h-px w-12 bg-studio-outline" />
       <span>{label}</span>
     </div>
@@ -116,7 +116,7 @@ export default function BeatsPage() {
       <section className="px-6 pb-24 md:px-16 md:pb-40">
         <div className="mx-auto max-w-[1440px]">
           <div className="group relative grid gap-8 overflow-hidden border border-studio-outline/45 bg-charcoal-depth/70 p-6 transition-colors hover:bg-charcoal-depth md:grid-cols-12 md:items-center md:p-8">
-            <div className="absolute inset-y-0 left-0 w-px bg-tertiary-gold opacity-70" />
+            <div className="absolute inset-y-0 left-0 w-px bg-accent-violet opacity-70" />
             <div className="md:col-span-4">
               <div
                 className="grit-overlay relative flex aspect-square items-center justify-center overflow-hidden border border-studio-outline bg-surface-lowest p-8"
@@ -131,13 +131,13 @@ export default function BeatsPage() {
                   unoptimized
                   className="w-full max-w-[18rem] object-contain opacity-90"
                 />
-                <div className="absolute inset-x-0 bottom-0 h-px bg-tertiary-gold/70" />
+                <div className="absolute inset-x-0 bottom-0 h-px bg-accent-violet/70" />
               </div>
             </div>
             <div className="md:col-span-8 md:pl-6">
               <div className="flex flex-col justify-between gap-8">
                 <div>
-                  <p className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-tertiary-gold">
+                  <p className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-accent-violet-text">
                     Now playing
                   </p>
                   <h2 className="mt-3 font-display text-[clamp(2.75rem,7vw,5rem)] uppercase leading-none tracking-[0.02em] text-ivory">
@@ -157,7 +157,7 @@ export default function BeatsPage() {
 
                 <div className="h-16 border-y border-studio-outline/45">
                   <div className="flex h-full items-center">
-                    <div className="relative h-0.5 w-1/3 bg-tertiary-gold">
+                    <div className="relative h-0.5 w-1/3 bg-accent-violet">
                       <span className="absolute right-0 top-1/2 size-2 -translate-y-1/2 bg-ivory" />
                     </div>
                     <div className="h-px flex-1 bg-studio-outline/55" />
@@ -167,7 +167,7 @@ export default function BeatsPage() {
                 <div>
                   <BeatStarsPanel compact />
                   <div className="mt-6 flex justify-end">
-                    <BeatStarsAction className="inline-flex min-h-12 w-full items-center justify-between border border-studio-outline/70 px-6 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-tertiary-gold hover:bg-tertiary-gold hover:text-ink sm:w-auto">
+                    <BeatStarsAction className="inline-flex min-h-12 w-full items-center justify-between border border-studio-outline/70 px-6 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-accent-violet hover:bg-accent-violet hover:text-white sm:w-auto">
                       {beatStars.profileUrl ? "Purchase on BeatStars" : "Request BeatStars Link"}
                       <ShoppingCart className="size-4" aria-hidden={true} />
                     </BeatStarsAction>
@@ -188,7 +188,7 @@ export default function BeatsPage() {
               Beats
             </h2>
             <div className="flex flex-wrap gap-x-6 gap-y-3 font-mono text-xs font-bold uppercase tracking-[0.16em] text-muted-studio">
-              <span className="border-b border-tertiary-gold pb-1 text-ivory">All</span>
+              <span className="border-b border-accent-violet pb-1 text-ivory">All</span>
               {genres.map((genre) => (
                 <span key={genre} className="pb-1">
                   {genre}
@@ -204,11 +204,11 @@ export default function BeatsPage() {
                 className="group grid gap-5 border-b border-studio-outline/45 py-6 transition-colors hover:bg-charcoal-depth md:grid-cols-12 md:items-center md:px-4"
               >
                 <div className="flex items-center gap-4 md:col-span-1 md:justify-center">
-                  <span className="font-mono text-xs font-bold text-tertiary-gold">
+                  <span className="font-mono text-xs font-bold text-accent-violet-text">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <Play
-                    className="size-4 text-muted-studio transition-colors group-hover:text-tertiary-gold md:hidden"
+                    className="size-4 text-muted-studio transition-colors group-hover:text-accent-violet-text md:hidden"
                     aria-hidden={true}
                   />
                 </div>
@@ -245,7 +245,7 @@ export default function BeatsPage() {
                 <div className="md:col-span-2 md:flex md:justify-end">
                   <BeatStarsAction
                     href={beat.beatStarsUrl}
-                    className="inline-flex min-h-11 w-full items-center justify-between border border-studio-outline/55 px-5 py-3 font-mono text-xs font-bold uppercase tracking-[0.14em] text-ivory transition-colors hover:border-tertiary-gold hover:bg-tertiary-gold hover:text-ink md:w-auto"
+                    className="inline-flex min-h-11 w-full items-center justify-between border border-studio-outline/55 px-5 py-3 font-mono text-xs font-bold uppercase tracking-[0.14em] text-ivory transition-colors hover:border-accent-violet hover:bg-accent-violet hover:text-white md:w-auto"
                   >
                     Purchase
                     <ArrowRight className="size-4" aria-hidden={true} />
@@ -257,7 +257,7 @@ export default function BeatsPage() {
           <div className="mt-14 grid gap-3 md:grid-cols-3">
             {catalogueNotes.map(([index, note]) => (
               <div key={index} className="border-t border-studio-outline/50 pt-4">
-                <span className="font-mono text-xs font-bold text-tertiary-gold">
+                <span className="font-mono text-xs font-bold text-accent-violet-text">
                   {index}
                 </span>
                 <p className="mt-3 text-sm leading-6 text-muted-studio">{note}</p>
@@ -287,14 +287,14 @@ export default function BeatsPage() {
           <div className="md:col-span-5">
             <Link
               href="/contact?service=custom-beats"
-              className="inline-flex min-h-14 w-full items-center justify-between border border-ivory bg-ivory px-6 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ink transition-colors hover:border-tertiary-gold hover:bg-tertiary-gold"
+              className="inline-flex min-h-14 w-full items-center justify-between border border-ivory bg-ivory px-6 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ink transition-colors hover:border-accent-violet hover:bg-accent-violet hover:text-white"
             >
               Request Custom Beats
               <Mail className="size-4" aria-hidden={true} />
             </Link>
             <Link
               href="/contact"
-              className="mt-4 inline-flex min-h-14 w-full items-center justify-between border border-studio-outline px-6 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-muted-studio transition-colors hover:border-tertiary-gold hover:text-tertiary-gold"
+              className="mt-4 inline-flex min-h-14 w-full items-center justify-between border border-studio-outline px-6 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-muted-studio transition-colors hover:border-accent-violet hover:text-accent-violet-text"
             >
               Start Inquiry
               <ArrowRight className="size-4" aria-hidden={true} />
@@ -307,7 +307,7 @@ export default function BeatsPage() {
         <div className="mx-auto max-w-[1440px] border border-studio-outline p-6 md:p-12">
           <div className="grid gap-10 md:grid-cols-12 md:items-end">
             <div className="md:col-span-8">
-              <p className="font-mono text-xs font-bold uppercase tracking-[0.22em] text-tertiary-gold">
+              <p className="font-mono text-xs font-bold uppercase tracking-[0.22em] text-accent-violet-text">
                 Commercial source of truth
               </p>
               <h2 className="mt-6 font-display text-[clamp(3.25rem,9vw,6.5rem)] uppercase leading-[0.95] tracking-[0.02em] text-ivory">
@@ -319,7 +319,7 @@ export default function BeatsPage() {
               </h2>
             </div>
             <div className="md:col-span-4">
-              <BeatStarsAction className="inline-flex min-h-14 w-full items-center justify-between border border-ivory bg-transparent px-6 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-tertiary-gold hover:bg-tertiary-gold hover:text-ink">
+              <BeatStarsAction className="inline-flex min-h-14 w-full items-center justify-between border border-ivory bg-transparent px-6 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-accent-violet hover:bg-accent-violet hover:text-white">
                 {beatStars.profileUrl ? "Purchase on BeatStars" : "Request BeatStars Link"}
                 <ShoppingCart className="size-4" aria-hidden={true} />
               </BeatStarsAction>

@@ -11,10 +11,10 @@ type ButtonLinkProps = {
 
 const variants = {
   primary:
-    "bg-ivory text-ink hover:bg-tertiary-gold",
+    "bg-ivory text-ink hover:bg-accent-violet hover:text-white",
   secondary:
-    "border border-ivory bg-transparent text-ivory hover:border-tertiary-gold hover:text-tertiary-gold",
-  ghost: "text-muted-studio hover:text-tertiary-gold"
+    "border border-ivory bg-transparent text-ivory hover:border-accent-violet hover:text-accent-violet-text",
+  ghost: "text-muted-studio hover:text-accent-violet-text"
 };
 
 export function ButtonLink({

@@ -17,7 +17,7 @@ const bioParagraphs = [
 function SectionMarker({ index, label }: { index: string; label: string }) {
   return (
     <div className="mb-8 flex items-center gap-4 font-mono text-xs font-bold uppercase tracking-[0.18em] text-muted-studio">
-      <span className="text-tertiary-gold">{index}</span>
+      <span className="text-accent-violet-text">{index}</span>
       <span className="h-px w-12 bg-studio-outline" />
       <span>{label}</span>
     </div>
@@ -35,8 +35,8 @@ function IndustrialLink({
 }) {
   const styles =
     variant === "primary"
-      ? "border-ivory bg-ivory text-ink hover:border-tertiary-gold hover:bg-tertiary-gold"
-      : "border-ivory bg-transparent text-ivory hover:border-tertiary-gold hover:text-tertiary-gold";
+      ? "border-ivory bg-ivory text-ink hover:border-accent-violet hover:bg-accent-violet hover:text-white"
+      : "border-ivory bg-transparent text-ivory hover:border-accent-violet hover:text-accent-violet-text";
 
   return (
     <Link
@@ -64,7 +64,7 @@ export default function HomePage() {
               <br />
               Music
               <br />
-              <span className="text-tertiary-gold">Producer.</span>
+              <span className="text-accent-violet">Producer.</span>
             </h1>
             <p className="mt-7 max-w-xl font-mono text-xs font-bold uppercase tracking-[0.24em] text-muted-studio">
               {metaTags.join("  |  ")}
@@ -73,7 +73,7 @@ export default function HomePage() {
               <span className="relative inline-block -rotate-2">
                 {siteIdentity.tagline}
                 <span
-                  className="absolute -bottom-2 left-0 h-1 w-full bg-tertiary-gold"
+                  className="absolute -bottom-2 left-0 h-1 w-full bg-accent-violet"
                   aria-hidden={true}
                 />
               </span>
@@ -120,7 +120,7 @@ export default function HomePage() {
             </div>
             <Link
               href="/beats"
-              className="inline-flex w-fit items-center gap-2 font-mono text-xs font-bold uppercase tracking-[0.16em] text-tertiary-gold transition-colors hover:text-ivory"
+              className="inline-flex w-fit items-center gap-2 font-mono text-xs font-bold uppercase tracking-[0.16em] text-accent-violet-text transition-colors hover:text-white"
             >
               All Beats
               <ArrowRight className="size-4" aria-hidden={true} />
@@ -142,7 +142,7 @@ export default function HomePage() {
                   unoptimized
                   className="w-full max-w-[18rem] object-contain opacity-90"
                 />
-                <div className="absolute inset-x-0 bottom-0 h-px bg-tertiary-gold/70" />
+                <div className="absolute inset-x-0 bottom-0 h-px bg-accent-violet/70" />
               </div>
             </div>
             <div className="md:col-span-7 md:pl-8">
@@ -174,7 +174,7 @@ export default function HomePage() {
               <BeatStarsPanel compact />
               <Link
                 href={primaryBeat.beatStarsUrl}
-                className="mt-6 inline-flex min-h-12 w-full items-center justify-between border border-studio-outline px-5 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-tertiary-gold hover:bg-tertiary-gold hover:text-ink md:w-auto md:min-w-80"
+                className="mt-6 inline-flex min-h-12 w-full items-center justify-between border border-studio-outline px-5 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-accent-violet hover:bg-accent-violet hover:text-white md:w-auto md:min-w-80"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -191,7 +191,7 @@ export default function HomePage() {
           {[80, 62, 72, 44, 88].map((width, index) => (
             <div
               key={index}
-              className="h-px bg-tertiary-gold"
+              className="h-px bg-accent-violet"
               style={{ width: `${width}%` }}
             />
           ))}
@@ -199,7 +199,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-[1440px]">
           <h2 className="max-w-5xl font-display text-[clamp(3rem,8vw,6rem)] uppercase leading-[1.02] tracking-[0.02em] text-ivory">
             Sound built in the{" "}
-            <span className="text-tertiary-gold">Caribbean</span>.
+            <span className="text-accent-violet">Caribbean</span>.
             <br />
             Made to travel.
           </h2>
@@ -223,7 +223,7 @@ export default function HomePage() {
                 href={`/contact?service=${service.slug}`}
                 className="group grid gap-4 border-t border-studio-outline/60 py-7 transition-colors last:border-b hover:bg-surface-container md:grid-cols-[5rem_1fr_auto] md:items-center md:px-4"
               >
-                <span className="font-mono text-sm font-bold text-tertiary-gold">
+                <span className="font-mono text-sm font-bold text-accent-violet-text">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <span>
@@ -234,7 +234,7 @@ export default function HomePage() {
                     {service.description}
                   </span>
                 </span>
-                <span className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-muted-studio group-hover:text-tertiary-gold">
+                <span className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-muted-studio group-hover:text-accent-violet-text">
                   Request Quote
                 </span>
               </Link>
@@ -271,19 +271,19 @@ export default function HomePage() {
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
               <Link
                 href="/contact"
-                className="inline-flex min-h-12 items-center justify-center border border-ivory bg-ivory px-7 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ink transition-colors hover:border-tertiary-gold hover:bg-tertiary-gold"
+                className="inline-flex min-h-12 items-center justify-center border border-ivory bg-ivory px-7 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ink transition-colors hover:border-accent-violet hover:bg-accent-violet hover:text-white"
               >
                 Get In Touch
               </Link>
               <Link
                 href="/beats"
-                className="inline-flex min-h-12 items-center justify-center border border-studio-outline px-7 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-tertiary-gold hover:text-tertiary-gold"
+                className="inline-flex min-h-12 items-center justify-center border border-studio-outline px-7 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-accent-violet hover:text-accent-violet-text"
               >
                 Explore Beats
               </Link>
             </div>
             <div className="mt-10 border border-studio-outline p-5">
-              <p className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-tertiary-gold">
+              <p className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-accent-violet-text">
                 Selected placement
               </p>
               <p className="mt-4 font-display text-3xl uppercase leading-none text-ivory">
@@ -294,7 +294,7 @@ export default function HomePage() {
               </p>
               <Link
                 href="/placements"
-                className="mt-5 inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory hover:text-tertiary-gold"
+                className="mt-5 inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory hover:text-accent-violet-text"
               >
                 View placements
                 <ArrowRight className="size-4" aria-hidden={true} />
@@ -323,7 +323,7 @@ export default function HomePage() {
             <div className="md:col-span-4">
               <Link
                 href="/cma"
-                className="inline-flex min-h-14 w-full items-center justify-between border border-ivory bg-ivory px-6 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ink transition-colors hover:border-tertiary-gold hover:bg-tertiary-gold"
+                className="inline-flex min-h-14 w-full items-center justify-between border border-ivory bg-ivory px-6 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ink transition-colors hover:border-accent-violet hover:bg-accent-violet hover:text-white"
               >
                 CMA Access
                 <CalendarDays className="size-4" aria-hidden={true} />
@@ -336,7 +336,7 @@ export default function HomePage() {
       <section id="contact" className="border-t border-studio-outline/60 px-6 py-24 md:px-16 md:py-40">
         <div className="mx-auto grid max-w-[1440px] gap-8 md:grid-cols-12 md:items-end">
           <div className="md:col-span-8">
-            <p className="font-mono text-xs font-bold uppercase tracking-[0.22em] text-tertiary-gold">
+            <p className="font-mono text-xs font-bold uppercase tracking-[0.22em] text-accent-violet-text">
               Work inquiries
             </p>
             <h2 className="mt-6 font-display text-[clamp(3.5rem,10vw,7rem)] uppercase leading-[0.95] tracking-[0.02em] text-ivory">
@@ -348,14 +348,14 @@ export default function HomePage() {
           <div className="md:col-span-4">
             <Link
               href="/contact"
-              className="inline-flex min-h-14 w-full items-center justify-between border border-ivory bg-transparent px-6 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-tertiary-gold hover:bg-tertiary-gold hover:text-ink"
+              className="inline-flex min-h-14 w-full items-center justify-between border border-ivory bg-transparent px-6 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition-colors hover:border-accent-violet hover:bg-accent-violet hover:text-white"
             >
               Request Quote
               <Mail className="size-4" aria-hidden={true} />
             </Link>
             <Link
               href="/beats"
-              className="mt-4 inline-flex min-h-14 w-full items-center justify-between border border-studio-outline px-6 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-muted-studio transition-colors hover:border-tertiary-gold hover:text-tertiary-gold"
+              className="mt-4 inline-flex min-h-14 w-full items-center justify-between border border-studio-outline px-6 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-muted-studio transition-colors hover:border-accent-violet hover:text-accent-violet-text"
             >
               Browse Beats
               <Music2 className="size-4" aria-hidden={true} />

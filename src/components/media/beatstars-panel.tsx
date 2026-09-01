@@ -10,7 +10,7 @@ export function BeatStarsPanel({ compact = false }: BeatStarsPanelProps) {
     return (
       <div className="border border-studio-outline/70 bg-charcoal-depth p-6">
         <div className="flex items-center gap-3">
-          <span className="flex size-11 items-center justify-center border border-tertiary-gold bg-tertiary-gold text-ink">
+          <span className="flex size-11 items-center justify-center border border-accent-violet bg-accent-violet text-white">
             <Headphones className="size-5" aria-hidden={true} />
           </span>
           <div>
@@ -44,7 +44,7 @@ export function BeatStarsPanel({ compact = false }: BeatStarsPanelProps) {
       {beatStars.profileUrl ? (
         <a
           href={beatStars.profileUrl}
-          className="inline-flex w-full items-center justify-center gap-2 border-t border-studio-outline px-4 py-3 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition hover:text-tertiary-gold"
+          className="inline-flex w-full items-center justify-center gap-2 border-t border-studio-outline px-4 py-3 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition hover:text-accent-violet-text"
         >
           Purchase on BeatStars
           <ExternalLink className="size-4" aria-hidden={true} />

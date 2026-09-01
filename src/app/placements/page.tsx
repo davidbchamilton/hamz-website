@@ -18,7 +18,7 @@ function PlacementLink({ href, label }: { href?: string; label: string }) {
   return (
     <a
       href={href}
-      className="inline-flex min-h-11 items-center justify-between gap-3 border border-studio-outline px-4 py-3 font-mono text-xs font-bold uppercase tracking-[0.14em] text-ivory transition-colors hover:border-tertiary-gold hover:bg-tertiary-gold hover:text-ink"
+      className="inline-flex min-h-11 items-center justify-between gap-3 border border-studio-outline px-4 py-3 font-mono text-xs font-bold uppercase tracking-[0.14em] text-ivory transition-colors hover:border-accent-violet hover:bg-accent-violet hover:text-white"
       target="_blank"
       rel="noreferrer"
     >
@@ -41,7 +41,7 @@ export default function PlacementsPage() {
         <div className="mx-auto max-w-[1440px]">
           {placements.length === 0 ? (
             <div className="border border-studio-outline bg-charcoal-depth p-8">
-              <Disc3 className="size-7 text-brass" aria-hidden={true} />
+              <Disc3 className="size-7 text-accent-violet-text" aria-hidden={true} />
               <h2 className="mt-5 font-display text-4xl uppercase leading-none text-ivory">
                 No verified placements are published yet
               </h2>
@@ -59,7 +59,7 @@ export default function PlacementsPage() {
                   className="grid gap-6 border border-studio-outline bg-charcoal-depth p-5 md:grid-cols-12 md:items-center md:p-8"
                 >
                   <div className="md:col-span-1">
-                    <span className="font-mono text-xs font-bold text-tertiary-gold">
+                    <span className="font-mono text-xs font-bold text-accent-violet-text">
                       {String(index + 1).padStart(2, "0")}
                     </span>
                   </div>
@@ -77,7 +77,7 @@ export default function PlacementsPage() {
                     )}
                   </div>
                   <div className="md:col-span-5">
-                    <p className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-tertiary-gold">
+                    <p className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-accent-violet-text">
                       {placement.producerRole} / {placement.year}
                     </p>
                     <h2 className="mt-4 font-display text-[clamp(3rem,7vw,5rem)] uppercase leading-none text-ivory">

@@ -129,7 +129,7 @@ export function ContactForm({
         id="contact-status"
         className={`mt-5 text-sm leading-6 ${
           submitState === "success"
-            ? "text-tertiary-gold"
+            ? "text-accent-violet-text"
             : submitState === "error"
               ? "text-red-300"
               : "text-ivory/58"
@@ -141,7 +141,7 @@ export function ContactForm({
       <button
         type="submit"
         disabled={submitState === "submitting"}
-        className="mt-6 inline-flex min-h-11 items-center justify-center rounded-md bg-ivory px-5 py-3 text-sm font-semibold text-ink transition-colors hover:bg-tertiary-gold disabled:cursor-wait disabled:bg-ivory/35 disabled:text-ivory/55"
+        className="mt-6 inline-flex min-h-11 items-center justify-center rounded-md bg-ivory px-5 py-3 text-sm font-semibold text-ink transition-colors hover:bg-accent-violet hover:text-white disabled:cursor-wait disabled:bg-ivory/35 disabled:text-ivory/55"
       >
         {submitState === "submitting" ? "Sending..." : "Send Inquiry"}
       </button>
