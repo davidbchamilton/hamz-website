@@ -4,11 +4,9 @@ import {
   Headphones,
   Mail,
   Mic2,
-  Music2,
   Radio,
   ShieldCheck,
   SlidersHorizontal,
-  Sparkles,
   Users
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
@@ -41,20 +39,6 @@ export const secondaryNavigation: NavigationItem[] = [
 ];
 
 export const services: Service[] = [
-  {
-    name: "Custom Beats",
-    slug: "custom-beats",
-    icon: Music2,
-    description:
-      "Original production shaped around an artist's voice, record direction, tempo, and release goals."
-  },
-  {
-    name: "Exclusive Production",
-    slug: "exclusive-production",
-    icon: Sparkles,
-    description:
-      "One-of-one production for artists who need a distinctive record rather than a shared beat license."
-  },
   {
     name: "Mixing & Mastering",
     slug: "mixing-mastering",
@@ -248,7 +232,7 @@ export const contactChannels = [
     label: "TikTok",
     detail: "Watch short-form studio clips, beat previews, and release updates.",
     href: "https://www.tiktok.com/@hamzxl",
-    icon: Music2
+    icon: Disc3
   },
   {
     label: "YouTube",

@@ -286,10 +286,10 @@ export default function BeatsPage() {
           </div>
           <div className="md:col-span-5">
             <Link
-              href="/contact?service=custom-beats"
+              href="/contact"
               className="inline-flex min-h-14 w-full items-center justify-between border border-ivory bg-ivory px-6 py-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ink transition-colors hover:border-accent-violet hover:bg-accent-violet hover:text-white"
             >
-              Request Custom Beats
+              Request Production
               <Mail className="size-4" aria-hidden={true} />
             </Link>
             <Link

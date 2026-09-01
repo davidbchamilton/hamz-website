@@ -164,8 +164,6 @@ For each eventual placement record:
 
 ## Services
 
-- Custom Beats
-- Exclusive Production
 - Mixing & Mastering
 - Vocal Production
 - Sync Licensing
