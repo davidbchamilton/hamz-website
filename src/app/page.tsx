@@ -171,6 +171,15 @@ export default function HomePage() {
               <p className="mb-8 text-sm leading-6 text-muted-studio">
                 {primaryBeat.mood}
               </p>
+              <Link
+                href={primaryBeat.beatStarsUrl}
+                className="mb-6 inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-[0.16em] text-accent-violet-text transition-colors hover:text-white"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Open Winter Jab Riddim on BeatStars
+                <ArrowRight className="size-4" aria-hidden={true} />
+              </Link>
               <BeatStarsPanel compact />
               <Link
                 href={primaryBeat.beatStarsUrl}
