@@ -64,6 +64,16 @@ export const services: Service[] = [
 
 export const placements: Placement[] = [
   {
+    song: "Work It",
+    artist: "Karthur M",
+    year: 2026,
+    producerRole: "Producer",
+    artworkUrl: "/images/workit.webp",
+    spotifyUrl: "https://open.spotify.com/track/66oHVqsGmGn8Tvz2jMLvI3?si=89047a3a6880426c",
+    appleMusicUrl: "https://music.apple.com/tt/album/work-it/1865588648?i=1865588649",
+    youtubeUrl: "https://www.youtube.com/watch?v=2jTB8qI5_QE"
+  },
+  {
     song: "Rum Cause It",
     artist: "Linky First",
     year: 2025,
@@ -104,6 +114,9 @@ export const placements: Placement[] = [
     youtubeUrl: "https://youtu.be/IX-iZgeY-dE?si=rZw1aAmetOIqjD63"
   }
 ];
+
+export const selectedPlacement =
+  placements.find((placement) => placement.song === "Rum Cause It") ?? placements[0];
 
 export const socialLinks: SocialLink[] = [
   {

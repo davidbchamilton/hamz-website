@@ -2,7 +2,7 @@ import { ArrowDown, ArrowRight, CalendarDays, Mail, Music2, ShoppingCart } from 
 import Image from "next/image";
 import Link from "next/link";
 import { BeatStarsPanel } from "@/components/media/beatstars-panel";
-import { featuredBeats, placements, services, siteIdentity } from "@/data/site";
+import { featuredBeats, selectedPlacement, services, siteIdentity } from "@/data/site";
 
 const metaTags = ["Soca", "Dancehall", "Afrobeats"];
 
@@ -296,10 +296,10 @@ export default function HomePage() {
                 Selected placement
               </p>
               <p className="mt-4 font-display text-3xl uppercase leading-none text-ivory">
-                {placements[0].song}
+                {selectedPlacement.song}
               </p>
               <p className="mt-3 text-sm leading-6 text-muted-studio">
-                {placements[0].artist} / {placements[0].year} / {placements[0].producerRole}
+                {selectedPlacement.artist} / {selectedPlacement.year} / {selectedPlacement.producerRole}
               </p>
               <Link
                 href="/placements"

@@ -89,6 +89,7 @@ Email: hamzxl868@gmail.com
 Derived from approved placements:
 
 - Linky First
+- Karthur M
 - Da Face
 - Xinbad
 - DNA 868 Muzik
@@ -125,6 +126,15 @@ For each eventual placement record:
 - Spotify link
 - Apple Music link
 - YouTube link
+
+- Song: Work It
+- Artist: Karthur M
+- Year: 2026
+- Producer role: Producer
+- Artwork: `public/images/workit.webp`
+- Spotify: https://open.spotify.com/track/66oHVqsGmGn8Tvz2jMLvI3?si=89047a3a6880426c
+- Apple Music: https://music.apple.com/tt/album/work-it/1865588648?i=1865588649
+- YouTube: https://www.youtube.com/watch?v=2jTB8qI5_QE
 
 - Song: Rum Cause It
 - Artist: Linky First

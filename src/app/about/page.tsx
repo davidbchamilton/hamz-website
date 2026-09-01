@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArrowDown, ArrowRight, BadgeCheck, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { placements, proofPoints, studioTools } from "@/data/site";
+import { placements, proofPoints, selectedPlacement, studioTools } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "About",
@@ -51,8 +51,6 @@ function SectionMarker({ index, label }: { index: string; label: string }) {
 }
 
 export default function AboutPage() {
-  const [primaryPlacement] = placements;
-
   return (
     <>
       <section className="relative mx-auto min-h-[calc(100svh-85px)] max-w-[1440px] overflow-hidden px-6 py-20 md:px-16 md:py-28">
@@ -183,7 +181,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-[1440px]">
           <SectionMarker index="03" label="Verified dossier" />
           <div className="border-t border-studio-outline">
-            {primaryPlacement ? (
+            {selectedPlacement ? (
               <Link
                 href="/placements"
                 className="group grid gap-5 border-b border-studio-outline py-7 transition-colors hover:bg-surface-container md:grid-cols-12 md:items-center md:px-4"
@@ -198,8 +196,8 @@ export default function AboutPage() {
                 </div>
                 <div className="max-w-2xl text-sm leading-6 text-muted-studio md:col-span-6">
                   <p>
-                    {primaryPlacement.song} by {primaryPlacement.artist} /{" "}
-                    {primaryPlacement.year} / {primaryPlacement.producerRole}
+                    {selectedPlacement.song} by {selectedPlacement.artist} /{" "}
+                    {selectedPlacement.year} / {selectedPlacement.producerRole}
                   </p>
                   <span className="mt-4 inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory group-hover:text-accent-violet-text">
                     View placement
