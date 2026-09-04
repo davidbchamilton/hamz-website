@@ -17,8 +17,8 @@ export function SiteHeader() {
             alt=""
             width={512}
             height={347}
-            unoptimized
-            priority
+            quality={80}
+            sizes="(min-width: 768px) 3.5rem, 3rem"
             className="h-12 w-auto object-contain md:h-14"
           />
           <span className="sr-only">

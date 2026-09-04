@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { secondaryNavigation, siteIdentity, socialLinks } from "@/data/site";
+import { secondaryNavigation } from "@/data/navigation";
+import { siteIdentity, socialLinks } from "@/data/site";
 
 export function SiteFooter() {
   return (
@@ -12,7 +13,8 @@ export function SiteFooter() {
             alt="HAMZXL logo"
             width={512}
             height={347}
-            unoptimized
+            quality={80}
+            sizes="(min-width: 768px) 9rem, 7rem"
             className="h-28 w-auto object-contain md:h-36"
           />
           <p className="mt-10 max-w-sm font-mono text-[11px] uppercase leading-5 tracking-[0.12em] text-muted-studio">

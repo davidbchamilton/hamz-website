@@ -1,5 +1,6 @@
-import { ExternalLink, Headphones } from "lucide-react";
+import { Headphones } from "lucide-react";
 import { beatStars } from "@/data/site";
+import { LazyBeatStarsFrame } from "@/components/media/lazy-beatstars-frame";
 
 type BeatStarsPanelProps = {
   compact?: boolean;
@@ -33,23 +34,9 @@ export function BeatStarsPanel({ compact = false }: BeatStarsPanelProps) {
   }
 
   return (
-    <div className="overflow-hidden border border-studio-outline bg-black">
-      <iframe
-        title="BeatStars player"
-        src={beatStars.embedUrl}
-        loading="lazy"
-        className="h-[620px] w-full md:h-[800px]"
-        allow="autoplay; encrypted-media"
-      />
-      {beatStars.profileUrl ? (
-        <a
-          href={beatStars.profileUrl}
-          className="inline-flex w-full items-center justify-center gap-2 border-t border-studio-outline px-4 py-3 font-mono text-xs font-bold uppercase tracking-[0.16em] text-ivory transition hover:text-accent-violet-text"
-        >
-          Purchase on BeatStars
-          <ExternalLink className="size-4" aria-hidden={true} />
-        </a>
-      ) : null}
-    </div>
+    <LazyBeatStarsFrame
+      embedUrl={beatStars.embedUrl}
+      profileUrl={beatStars.profileUrl}
+    />
   );
 }

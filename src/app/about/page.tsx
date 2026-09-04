@@ -68,8 +68,8 @@ export default function AboutPage() {
             alt="HAMZXL pointing to his Crapaud Smoke Dey Pipe shirt by a chain-link fence."
             width={1400}
             height={2100}
-            priority
-            unoptimized
+            preload
+            quality={82}
             sizes="(min-width: 768px) calc(100vw - 128px), calc(100vw - 48px)"
             className="h-full w-full border border-studio-outline/50 object-cover object-[50%_36%] grayscale"
           />
@@ -148,7 +148,7 @@ export default function AboutPage() {
               alt="Analog studio hardware, guitar, MIDI keys, and digital waveform light in a Caribbean studio setting."
               width={1200}
               height={1200}
-              unoptimized
+              quality={80}
               sizes="(min-width: 768px) 42vw, calc(100vw - 48px)"
               className="aspect-square w-full border border-studio-outline/50 object-cover grayscale"
             />

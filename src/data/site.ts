@@ -12,7 +12,6 @@ import {
 import type { LucideIcon } from "lucide-react";
 import type {
   FeaturedBeat,
-  NavigationItem,
   Placement,
   Service,
   SiteIdentity,
@@ -26,17 +25,6 @@ export const siteIdentity: SiteIdentity = {
   description:
     "Official public website for Hamz XL, a Caribbean music producer."
 };
-
-export const primaryNavigation: NavigationItem[] = [
-  { href: "/", label: "Home" },
-  { href: "/beats", label: "Beats" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" }
-];
-
-export const secondaryNavigation: NavigationItem[] = [
-  { href: "/placements", label: "Placements" }
-];
 
 export const services: Service[] = [
   {

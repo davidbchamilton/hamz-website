@@ -91,8 +91,8 @@ export default function HomePage() {
               alt="Portrait of the producer leaning against a chain-link fence."
               width={1400}
               height={2098}
-              priority
-              unoptimized
+              preload
+              quality={82}
               sizes="(min-width: 768px) 44vw, calc(100vw - 48px)"
               className="h-full w-full object-cover object-[50%_32%]"
             />
@@ -139,7 +139,8 @@ export default function HomePage() {
                   alt=""
                   width={512}
                   height={347}
-                  unoptimized
+                  quality={80}
+                  sizes="18rem"
                   className="w-full max-w-[18rem] object-contain opacity-90"
                 />
                 <div className="absolute inset-x-0 bottom-0 h-px bg-accent-violet/70" />
@@ -260,7 +261,7 @@ export default function HomePage() {
               alt="HAMZXL pointing to his Crapaud Smoke Dey Pipe shirt by a chain-link fence."
               width={1400}
               height={2100}
-              unoptimized
+              quality={80}
               sizes="(min-width: 768px) 34vw, calc(100vw - 48px)"
               className="aspect-[4/5] w-full border border-studio-outline/50 object-cover object-[50%_34%] grayscale"
             />

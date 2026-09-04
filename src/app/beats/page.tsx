@@ -100,8 +100,8 @@ export default function BeatsPage() {
               alt="HAMZXL standing by a chain-link fence."
               width={1400}
               height={2098}
-              priority
-              unoptimized
+              preload
+              quality={82}
               sizes="(min-width: 768px) 35vw, calc(100vw - 48px)"
               className="h-full w-full border border-studio-outline/50 object-cover object-[52%_42%] grayscale"
             />
@@ -128,7 +128,8 @@ export default function BeatsPage() {
                   alt=""
                   width={512}
                   height={347}
-                  unoptimized
+                  quality={80}
+                  sizes="18rem"
                   className="w-full max-w-[18rem] object-contain opacity-90"
                 />
                 <div className="absolute inset-x-0 bottom-0 h-px bg-accent-violet/70" />
