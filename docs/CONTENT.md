@@ -153,7 +153,7 @@ For each eventual placement record:
 - Artwork: `public/images/ghost-mansion.webp`
 - Spotify: https://open.spotify.com/album/6F4P2zutPcvf7WxHBpGHbA?si=qpc153XOS6iZfNUpWpNEFg
 - Apple Music: https://music.apple.com/us/album/ghost-mansion-riddim-ep-ep/1788497562
-- YouTube: https://www.youtube.com/watch?v=9a0CeiloosA
+- YouTube: https://www.youtube.com/watch?v=E3B8OSfN9ZY&list=PLOjmy-UpL7zsymZnFQB9kYpUyCjoRok78
 
 - Song: Parang Z Riddim
 - Artist: Da Face, Starflo, DNA 868 Muzik, Chenko, Shaq

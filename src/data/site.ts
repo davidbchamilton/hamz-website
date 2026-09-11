@@ -79,7 +79,7 @@ export const placements: Placement[] = [
     artworkUrl: "/images/ghost-mansion.webp",
     spotifyUrl: "https://open.spotify.com/album/6F4P2zutPcvf7WxHBpGHbA?si=qpc153XOS6iZfNUpWpNEFg",
     appleMusicUrl: "https://music.apple.com/us/album/ghost-mansion-riddim-ep-ep/1788497562",
-    youtubeUrl: "https://www.youtube.com/watch?v=9a0CeiloosA"
+    youtubeUrl: "https://www.youtube.com/watch?v=E3B8OSfN9ZY&list=PLOjmy-UpL7zsymZnFQB9kYpUyCjoRok78"
   },
   {
     song: "Parang Z Riddim",
