@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import {
   Anton,
   Hanken_Grotesk,
@@ -11,6 +12,7 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { siteIdentity } from "@/data/site";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://hamzxl868.com";
+const googleAnalyticsId = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID;
 
 const anton = Anton({
   subsets: ["latin"],
@@ -89,6 +91,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {googleAnalyticsId ? (
+        <>
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${googleAnalyticsId}');`}
+          </Script>
+        </>
+      ) : null}
       <body
         className={`${anton.variable} ${hanken.variable} ${jetbrains.variable} ${permanentMarker.variable} min-h-screen bg-surface text-ivory antialiased`}
       >
