@@ -7,7 +7,10 @@ import { contactChannels, serviceSelectOptions } from "@/data/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Request production work, mixing and mastering, vocal production, or sync licensing."
+    "Request production work, mixing and mastering, vocal production, or sync licensing.",
+  alternates: {
+    canonical: "/contact"
+  }
 };
 
 type ContactPageProps = {

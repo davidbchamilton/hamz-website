@@ -7,7 +7,10 @@ import { placements } from "@/data/site";
 export const metadata: Metadata = {
   title: "Placements",
   description:
-    "Verified released records and production credits for Hamz XL."
+    "Verified released records and production credits for Hamz XL.",
+  alternates: {
+    canonical: "/placements"
+  }
 };
 
 function PlacementLink({ href, label }: { href?: string; label: string }) {
