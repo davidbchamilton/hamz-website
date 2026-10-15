@@ -1,5 +1,19 @@
 # Security
 
+## Next.js ImageResponse Advisory
+
+For GHSA-vcvr-r3jv-pc5j, Next.js 16.3.6 is the first patched 16.x release.
+The project uses the 16.3.8 patch line with the resolved version recorded in
+`package-lock.json`. Deploy the updated lockfile and rebuild on Hostinger.
+
+The application currently does not use `next/og` or `ImageResponse`. If dynamic
+social image generation is introduced, keep Next.js patched and do not pass
+untrusted values into SVG content, attributes, or styles.
+
+Advisory: https://github.com/vercel/next.js/security/advisories/GHSA-vcvr-r3jv-pc5j
+
+## Application Requirements
+
 Future implementation must follow these requirements:
 
 - Never trust browser-side authorization.
