@@ -7,6 +7,15 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        source: "/_next/static/media/:font(.*\\.woff2)",
+        headers: [
+          {
+            key: "X-Robots-Tag",
+            value: "noindex"
+          }
+        ]
+      },
+      {
         source: "/images/:path*",
         headers: [
           {

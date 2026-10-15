@@ -47,3 +47,15 @@ deploying canonical changes, inspect `/contact` and `/placements` in Search
 Console, confirm their declared canonicals match their URLs, and request indexing
 for those canonical pages. Do not remove canonical tags or block service variants
 in robots.txt to clear this informational report.
+
+## Font Assets
+
+Generated WOFF2 fonts under `/_next/static/media/` return
+`X-Robots-Tag: noindex`. These files are rendering resources, not search landing
+pages. Keep them crawlable so Google can render the site and read the header.
+Do not block `/_next/` in robots.txt or include font assets in the sitemap.
+
+Search Console may list fonts as "Crawled - currently not indexed" or, after
+recrawling the header, as excluded by `noindex`. Both are expected for fonts and
+do not indicate that the pages using them cannot be indexed. After deploying,
+verify that font responses retain the header through Hostinger's asset cache.
