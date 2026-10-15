@@ -48,6 +48,13 @@ Console, confirm their declared canonicals match their URLs, and request indexin
 for those canonical pages. Do not remove canonical tags or block service variants
 in robots.txt to clear this informational report.
 
+## Socials
+
+`/socials` has its own title, description, canonical path, Open Graph URL, and
+Twitter metadata, and is included in `sitemap.xml`. Selected post titles,
+summaries, publication dates, and source links are present in server-rendered
+HTML; indexing does not depend on vendor embeds loading.
+
 ## Font Assets
 
 Generated WOFF2 fonts under `/_next/static/media/` return

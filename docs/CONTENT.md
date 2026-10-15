@@ -58,6 +58,20 @@ WhatsApp: 18687619145
 
 Email: hamzxl868@gmail.com
 
+## Selected Social Content
+
+The `/socials` page uses manually selected public Instagram posts, reviewed
+October 15, 2026:
+
+- October 7: Honey & Lime Riddim — https://www.instagram.com/karthurm/reel/DeNZki9KW5H/
+- October 1: Rude / Karthur M — https://www.instagram.com/chrystonfloyd/p/Dd9LlJXp6gV/
+- September 20: Outside once in a while — https://www.instagram.com/hamzxl868/p/DdgmR7DkWNA/
+
+The first two appear on HAMZXL's profile as collaboration content. Titles and
+descriptions are editorial summaries. This does not add placements or awards.
+
+TikTok uses three individual video URLs supplied by the user: `7592730301005090104`, `7546992657847880965`, and `7536322528248122630`. Dates and captions remain unverified; neutral selection labels are used. See `docs/SOCIALS.md` for source links and maintenance.
+
 ## Featured Beats
 
 - Title: Winter Jab Riddim

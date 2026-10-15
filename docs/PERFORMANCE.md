@@ -141,6 +141,14 @@ CLS is already excellent and should remain a regression constraint.
   were observed during the checked homepage, beats, BeatStars-load, and contact
   flows.
 
+## Socials Page
+
+Social embeds are limited to `/socials` and load only after explicit visitor
+activation. Each reserves a fixed 640px frame. The homepage Socials prompt is a
+server-rendered internal link and loads no social vendor assets. Content and
+metadata do not depend on social networks during builds or initial rendering.
+TikTok uses individual player iframes with autoplay disabled. Vendor media, caching, and script cost inside activated iframes remain platform-controlled.
+
 ## Follow-Up
 
 Run a fresh mobile PageSpeed Insights test after deployment to production.

@@ -9,6 +9,12 @@ Next.js application
 
 The public marketing site should avoid unnecessary client-side JavaScript and prefer static or server-rendered content where practical.
 
+## Social Content
+
+`/socials` is statically rendered with curated content in `src/data/socials.ts`.
+Only `SocialEmbed` is a client component. Visitor activation loads an Instagram
+iframe or individual TikTok player iframe. No vendor script is injected in the parent document. No social API secrets, database, runtime feed request, or new hosting dependency is introduced. See `docs/SOCIALS.md` for sources and the update procedure.
+
 ## Private CMA System
 
 Planned future flow:

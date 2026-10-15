@@ -343,6 +343,18 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section aria-labelledby="home-socials-heading" className="border-t border-studio-outline/60 px-6 py-14 md:px-16">
+        <div className="mx-auto flex max-w-[1440px] flex-col justify-between gap-6 sm:flex-row sm:items-center">
+          <div>
+            <p className="font-mono text-xs uppercase tracking-[0.18em] text-accent-violet-text">Beyond the studio</p>
+            <h2 id="home-socials-heading" className="mt-3 font-display text-3xl uppercase text-ivory">Keep up with HAMZXL.</h2>
+          </div>
+          <Link href="/socials" className="inline-flex min-h-12 items-center gap-3 font-mono text-xs font-bold uppercase tracking-[0.16em] text-accent-violet-text hover:text-ivory">
+            Explore Socials <ArrowRight className="size-4" aria-hidden={true} />
+          </Link>
+        </div>
+      </section>
+
       <section id="contact" className="border-t border-studio-outline/60 px-6 py-24 md:px-16 md:py-40">
         <div className="mx-auto grid max-w-[1440px] gap-8 md:grid-cols-12 md:items-end">
           <div className="md:col-span-8">

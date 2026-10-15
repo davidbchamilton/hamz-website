@@ -47,6 +47,10 @@ Eventually contain:
 - optional studio setup
 - professional photography
 
+## `/socials`
+
+Public page containing three selected Instagram posts and three user-supplied TikTok videos. Linked from primary navigation, the footer, and homepage. Individual embeds load only after visitor activation; direct links remain available. Content sources and maintenance are documented in `docs/SOCIALS.md`.
+
 ## `/contact`
 
 Eventually contain:

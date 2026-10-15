@@ -38,6 +38,11 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
+                <Link className="transition hover:text-accent-violet-text" href="/socials">
+                  Socials
+                </Link>
+              </li>
+              <li>
                 <Link className="transition hover:text-accent-violet-text" href="/contact">
                   Contact
                 </Link>
